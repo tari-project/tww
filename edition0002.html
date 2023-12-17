@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Tari Weekly Whisper - Edition 0002</title>
+<style type="text/css">
+ body { background-color: #000; }
+ a { color: #f5f }
+ a:link { text-decoration: none; }
+ a:visited { text-decoration: none; }
+ a:hover { text-decoration: none; }
+ a:active { text-decoration: none; }
+ .container { text-align: center; }
+ .container pre {
+       font-family:Courier New, Lucida, monospace;
+       font-size:16px;
+       color: #ccc;
+       display: inline-block;
+       text-align: left;
+     }
+ .mt { margin-left: auto; margin-right: auto }
+ .f4 { color: #00a }
+ .f5 { color: #a0a }
+ .f7 { color: #aaa }
+ .f8 { color: #555 }
+ .fd { color: #f5f }
+ .b0 { background-color: #000 }
+ .b4 { background-color: #00a }
+ .b5 { background-color: #a0a }
+ .b7 { background-color: #aaa }
+ .b8 { background-color: #555 }
+</style>
+</head>
+<body>
+<div class="container">
+<pre><span class="fd b0"><span class=f0>
+                                   </span><span class=f8>· ──▄▄
+                                  ·-▄▄▀</span>▄▄<span class=f8>▀▄─·
+                           -─▄▄▄▀▀▄▀</span>▄ <span class=b4>█▐</span>▀▀<span class=f8>▐═-
+                         ─▄▀▀</span>▄▄▄▐█ █<span class=b4>▐</span><span class=f7> </span><span class=b4>█░█</span><span class=f8>▐▀
+          ·─▄▄▀▀▀▄▄▄▄     ▌</span><span class=b4>██░▐</span>▀▐██<span class=b4>░▐</span><span class=f7> </span>█<span class=b4>█</span>▄▄<span class=f8>▀▄
+      -──▄▄▀</span><span class=f5>▄▄</span><span class="f5 b4">▓▓▓</span><span class=f5>▄▄▄▄</span><span class=f8>▀▀▀▀▄█  </span><span class=b4>▓█</span><span class=f8> </span>██ ▀▀      <span class=f8>▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀▀▄
+      ▄▀▀</span><span class=f5>▄▄</span><span class="f5 b4">▓▓</span><span class=f5>▀▀  ▀▀▀▀</span><span class="f5 b4">▓▓▓▓</span><span class=f5>▄▄  </span>█<span class=b4>▄█▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀▀</span>█<span class=f8>▐─·-
+    ▄▀</span><span class=f5>▄</span><span class="f5 b4">██</span><span class=f5>▀▀              </span><span class="f5 b4">▓▓</span>  ▐<span class=b4>▌ </span><span class="f4 b5">▓▓▒▓</span><span class=b4> ▐</span>▌ ▐█<span class="f4 b5">▒</span><span class=b4>▄▄▄▄▄</span><span class="f4 b5">▓▒</span>▌ █<span class="f4 b5">▓▒</span><span class=b4>▄▄▄▄▄</span><span class="f4 b5">▓</span><span class=b4>▐</span>▌ ▐<span class=b4>▄</span><span class="f4 b5">█▓▓▒▓█</span><span class=b4>▄</span>▌<span class=f8>█═─
+ -══█ </span><span class=f5>███████▄▄▄         </span><span class="f5 b4">▓▓</span>   ▀▀█<span class="f4 b5">▒░</span>█▀▀  █<span class="f4 b5">▒░</span>█ <span class=f8>░ </span>█<span class="f4 b5">▒░</span>█ █<span class="f4 b5">▒░</span>█ <span class=f8>░ </span>█<span class="f4 b5">▒</span><span class=b4>▐</span>▌<span class=f8>░ </span>▀▀█<span class="f4 b5">▒░</span>█▀▀<span class=f8>▄▀
+    █ </span><span class=b5>░░</span><span class=f8>░   </span><span class=f5>▀▀▀▀███▄▄▄▄  </span><span class=b5>  </span><span class=f7>     </span>█<span class="f4 b5">░ </span>█    █<span class="f4 b5">░ </span>█▄▄▄█<span class="f4 b5">░ </span>█ █<span class="f4 b5">░ </span>█▄▄▄<span class=b5>▌</span><span class="f4 b5">░</span>█ <span class=f8>░░  </span>█<span class="f4 b5">░ </span>█ <span class=f8>█══- -
+  ·─█ </span><span class=b5>▒▒</span><span class=f8>▒░░░░░░ </span><span class=b5> </span><span class=f5>█ ▀▀▀▀</span><span class=b5>░░░░</span><span class=f7>     </span>█<span class=b5> ░</span>█    █<span class=b5> ░▄▄▄▄▄ ░</span>█ █<span class=b5> ░▄▄▄▄▄▐</span>▄  <span class=f8>░░ </span>█<span class=b5> ░</span>█ <span class=f8>█
+    █ </span>▀<span class=b5>▓▓</span><span class=b8>▄</span><span class=f8>▒▒▒▒▒░</span><span class=b5>░ </span><span class=f8>░░░░ </span>▄<span class=b5>▒▒</span><span class=f5>▀     </span>█<span class=b5>░▒</span>█    █<span class=b5>░▒</span>█   █<span class=b5>░▒</span>█ █<span class=b5>░▒</span>█   █<span class=b5>░░</span>█ <span class=f8>░░ </span>█<span class=b5>░▒</span>█ <span class=f8>█─-─·
+     ▀▄ </span>▀█<span class=b5>▓</span>█<span class=b8>▄</span><span class=f8>▓▓▒</span><span class=b5>▒░</span><span class=f8>▒▓▒</span><span class=b8>▄</span><span class=b5>▓▓</span>▀ <span class=f8>░  ░  </span>█<span class=b5>▒▓</span>█  <span class=f8>░ </span>█<span class=b5>▒▓</span>█ <span class=f8>░ </span>█<span class=b5>▒▓</span>█ █<span class=b5>▒▓</span>█ <span class=f8>░ </span>█<span class=b5>▒▒</span>█ <span class=f8>░  </span>█<span class=b5>▒▓</span>█ <span class=f8>▀▄
+       ▀▄ </span>▀▀██<span class=b8>▄</span><span class=f8>▓</span><span class=b5>▓▒</span><span class=f8>▓</span><span class=b8>▄</span>█<span class=b5>▓</span>▀ <span class=f8>░▒▒░░▒░ </span>█<span class=b5>▓█</span>█ <span class=f8>░▒ </span>█<span class=b5>▓</span>██ <span class=f8>▒ </span>█<span class=b5>▓</span>██ █<span class=b5>▓</span>██ <span class=f8>▒ </span>█<span class=b5>▓▓</span>█  ▄█<span class=b5>█▓█</span>██▄ <span class=f8>▀▄
+  · - ───▀▀▄ </span>▀██<span class=b5>▓▓</span>██▀ <span class=f8>▒▒▒▓▓▒▒▓▒ </span>█<span class=b4>█</span>█▌<span class=f8>▒▒▓ </span>███▌<span class=f8>▓▓▌</span>▐███ ███▌<span class=f8>▒▓▒</span>▐███ ██████████ <span class=f8>█═─ ·
+            ▀▄ </span>▀█<span class=b5>▓</span>▀ <span class=f8>▓▓▓▓▓</span><span class="f8 b7">█</span><span class=f8>█▓▓█▓░▄▄▄▄▓▓█▓▄▄▄▄██▓▄▄▄▄▀▄▄▄▄▓█▓▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄█─ ·
+▄▀▀▄▀▀▄▀▀▀▀▀▄▀▀▀▄▄▀▀▀▓▀▀▓▀▀▀▓▀▀▀▀▀▀▓▀▀▀▓▀▀▒▀▀▓▀▀▒▀▀▀▀▀▓▓▀▀▀▒▓▀▀▀▀▀▓▀▀▀▀▀▓▀▀▀▀▀▄
+▌</span><span class=b7>▓</span>▌▄▐█ <span class=b7>▓</span>███<span class=b7>█</span><span class=f7> </span><span class=b7>▓</span>████ <span class=b5>▓</span>█ <span class=b7>▓█</span><span class=f7> </span><span class=b5>██</span> <span class=f8>▒ </span><span class=b7>▓</span>█<span class=f4>▄</span><span class=b7>▓</span>█  <span class=b7>▓</span>▌▄▐█ <span class=b7>▓█</span> <span class=b7>▓</span><span class=b5>▓</span><span class=f7> </span><span class=b7>▓</span>████ ▄<span class=b7>▓</span>█<span class=b5>▓</span>▄ <span class=b7>▓</span>████ <span class=b7>▓</span>████ <span class=b7>▓</span>████<span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b5>▓</span>▌<span class=b5>▓</span>▐<span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄</span>▄ <span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄</span>▄ <span class=f4>▓</span><span class=b5>▒▓</span><span class=b4>▄</span><span class=b5>▓</span>▀<span class=f4>░</span><span class=b5>▓▓</span><span class=f7> </span><span class=f8>░ </span><span class=b4>▐</span><span class=b5>▓</span><span class=b4>▄</span><span class=b5>▓</span>▌ <span class=f4>░</span><span class=b5>▓</span><span class=b4>▌</span><span class=b5>▓</span><span class=b4>▐</span><span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span>▄<span class=b5>▓▒</span><span class=f7> </span><span class=f4>▐</span><span class=b4>▐</span>█▌ <span class=f4>░</span>█<span class=b5>▓</span><span class=b4>▄▀</span>▀<span class=f4>░</span><span class=b5>█▓</span><span class=b4>▄</span>▄<span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄▄</span><span class=f7> </span><span class=f4>░</span><span class=b5>█▓</span><span class=b4>▄</span>▄<span class=b5>▓</span><span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b5>▒▒▒▒▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=f4>▀  ░</span><span class=b5>▒▒</span><span class=f4>▀  ▒</span><span class=b5>░▒</span><span class=b4>▀</span>█<span class=b5>▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=f7>   </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>▒</span>▌  <span class=f4>▒</span><span class=b5>▒▒▒▒▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=b4>▀</span><span class=b5>▒░</span><span class=f7> </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>▓</span>▌  <span class=f4>▒</span><span class=b4>▀</span><span class=b5>▒░</span>▄<span class=f4>▒</span><span class=b5>▓▒</span><span class=b4>▀</span>▀ <span class=f4>▒</span><span class=b5>▒▒</span><span class=f4>▀  ▒</span><span class=b5>▓▒</span><span class=b4>▀</span><span class=b5>▒</span>▄<span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b4>▀</span><span class=b5>░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>░░░░ </span><span class=f4>░</span><span class=b5>░░░░ </span><span class=f4>█</span><span class=b5> ░</span><span class=f7> </span><span class=b4>▐</span><span class=b5>░</span><span class=f4>▓</span><span class=b5>░░░  </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>░</span>▌ <span class=f8>▄</span><span class="f8 b4">▌</span><span class=b4>▀</span><span class=b5>░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>░░</span><span class=f4>▓</span><span class=b5>░ </span><span class=f4>▓</span>█<span class=b5>▓▒░ </span><span class=f4>▓</span><span class=b5>░▒</span><span class=f5>▄</span><span class=b5> </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>▒░</span>   <span class=f4>▓</span><span class=b5>░░░░ </span><span class=f4>▓</span><span class=b5>▒░</span><span class=f4>▓</span><span class=b5>░▒</span><span class=f8>▐
+▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀ ▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄</span><span class=f8>▄▀▀▀▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄</span><span class=f8>▀ </span></span>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>                               EDITION 0002                             </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Welcome to Edition 0000 of the Tari Weekly Whisper, where we cover developments
+and news coming out over the last week that privacy lovers will actually care
+about! Let's dig in...
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█    </span><span class=fd>SECTION 1: PRIVACY NEWS      </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+                                                                                
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>WhatsApp's New Update: A Leap in Privacy with 'View Once' Voice Messages</span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+WhatsApp, the world's leading messenger service, has introduced a significant
+update that enhances user privacy, particularly for voice messages. This update,
+which comes at a crucial time for millions of users, addresses a notable gap in
+WhatsApp's privacy features. Owned by Meta, WhatsApp has continued to prioritize
+privacy and security, despite being part of a company often criticized for data
+harvesting. This new feature aligns with WhatsApp's ongoing efforts to offer
+secure communication options to its 2 billion users.
+
+The latest update introduces the "view once" option for voice messages, a
+feature that has been highly anticipated. This functionality allows users to
+send voice messages that can only be played once, adding an extra layer of
+privacy to sensitive communications. It's particularly timely during the holiday
+season and other social gatherings, where the risk of sending unintended voice
+messages is higher. WhatsApp suggests this feature could be used for sharing
+sensitive information like credit card details or surprise plans, ensuring that
+such messages don't remain accessible indefinitely.
+
+Looking ahead to 2024, the messaging app landscape is set to become even more
+competitive with innovations from major players like iMessage and Google.
+WhatsApp's continued focus on security innovation, especially in the context of
+the EU's push for platform integration and openness, positions it as a leader in
+privacy-focused messaging. This update is a testament to WhatsApp's commitment
+to privacy innovation, offering users enhanced security in their digital
+communications.
+
+<a href="https://www.forbes.com/sites/zakdoffman/2023/12/16/apple-iphone-and-google-android-users-get-critical-new-whatsapp-update/?sh=7862f4b145a3">https://www.forbes.com/sites/zakdoffman/2023/12/16/apple-iphone-and-google-
+android-users-get-critical-new-whatsapp-update/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>        Navigating Retail Discounts Without Compromising Privacy        </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In her article on Komando.com, Kim Komando addresses the privacy concerns
+associated with sharing personal information like email addresses and phone
+numbers for retail discounts. The article highlights the risks involved in
+signing up for shopping apps, email lists, and store loyalty programs, citing
+statistics from Atlas VPN. It reveals that a significant percentage of shopping
+apps share personal data with third parties, including names, addresses, device
+IDs, financial data, and location information. Loyalty programs, while offering
+discounts, collect detailed purchase histories and personal data, which can be
+vulnerable to identity theft.
+
+To enjoy discounts without compromising privacy, Komando suggests several
+strategies:
+
+1. Use Alternative Contact Information: For loyalty programs, use an office
+phone number and a disposable email address. This approach keeps your primary
+contact information private.
+
+2. Shop at Stores Without Loyalty Programs: Stores like Trader Joe’s and Walmart
+offer discounts without requiring participation in a loyalty program.
+
+3. Utilize Physical Coupons: Many grocery stores offer printable coupons on
+their websites, which can be used without sharing personal data.
+
+4. Avoid Sharing Sensitive Information: Never give out your Social Security or
+driver’s license number for retail discounts.
+
+5. Ask for Discounts Directly: Cashiers often have codes to apply digital prices
+without needing a loyalty app or code.
+
+6. Leverage the Community: Politely ask fellow shoppers if you can use their
+loyalty card.
+
+7. Evaluate the Trade-off: Consider if the savings are worth the potential
+privacy risks.
+
+For further privacy protection, Komando recommends using burner email addresses
+and phone numbers for coupons and loyalty cards. Services like Temp Mail and
+10MinuteMail offer temporary, anonymous email addresses, while Apple iCloud+
+subscribers can use the Hide My Email feature to create unique, random email
+addresses. These measures allow consumers to access retail discounts while
+maintaining their privacy and reducing the risk of data misuse.
+
+<a href="https://www.komando.com/kims-column/retail-discounts-without-privacy-risks/898842/">https://www.komando.com/kims-column/retail-discounts-without-privacy-risks/
+898842/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>     Understanding iCloud Private Relay: Is It Comparable to a VPN?     </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+iCloud Private Relay, a feature introduced by Apple, is often compared to a
+Virtual Private Network (VPN), but there are key differences. This feature,
+available with an iCloud+ subscription, encrypts internet traffic and obscures
+online activities, similar to a VPN. However, it's not a complete replacement
+for traditional VPN services.
+
+iCloud Private Relay encrypts your internet request and sends it through two
+internet relays. The first relay, managed by Apple, assigns an anonymous IP
+address linked to your region but not your exact location. The second relay,
+handled by a third-party content provider, decrypts the web address you want to
+visit and forwards your request. This process ensures that neither your network
+provider nor Apple can see your browsing history, enhancing privacy.
+
+While iCloud Private Relay does hide your IP address and offers some location
+adjustments, it only works with Safari and doesn't encrypt all device data like
+a VPN. It doesn't allow for server location options, meaning you can't change
+your country as you can with a VPN. This limits its use for accessing
+geo-restricted content. Additionally, iCloud Private Relay lacks a no-log policy
+and a kill switch feature, both common in VPN services.
+
+iCloud Private Relay is useful for basic privacy protection, especially for
+Safari users. However, it doesn't offer the full range of features and
+protections provided by a comprehensive VPN service. For users seeking advanced
+privacy features, like changing server locations or ensuring no logs are kept, a
+dedicated VPN service would be a more suitable choice.
+
+In summary, while iCloud Private Relay offers a base level of protection and
+privacy, particularly for Safari users, it doesn't fully replicate the
+capabilities of a VPN. Users should consider their specific needs and the
+limitations of Private Relay when deciding between it and a traditional VPN
+service.
+
+<a href="https://www.makeuseof.com/is-icloud-private-relay-a-vpn/">https://www.makeuseof.com/is-icloud-private-relay-a-vpn/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>Google's New Policy to Limit Geofence Warrants and Enhance User Privacy </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Google has announced a significant policy change that could have far-reaching
+implications for user privacy and law enforcement practices. The tech giant's
+new policy allows users to save their location history, known as Timeline,
+directly to their devices instead of storing it in the cloud. Additionally,
+Google will shorten the data retention period to three months by default and
+enable users to delete data related to specific locations. These changes are
+part of a broader effort to give users more control over their personal
+information and to curb the use of geofence warrants by law enforcement.
+
+Geofence warrants, also known as "reverse location warrants," have allowed law
+enforcement to compel tech firms, mainly Google, to surrender location history
+data to identify people's movements in a given area, regardless of whether they
+are suspects. This practice has raised privacy concerns, with watchdogs labeling
+it as unconstitutional. According to Google, the number of such warrants has
+surged in recent years, with over 50,000 subpoenas, warrants, and other legal
+requests received in just the first half of 2020.
+
+Privacy advocates have long warned against the use of geofence warrants, calling
+for state governments to outlaw the practice. In 2022, New York reintroduced a
+bill to ban state law enforcement from obtaining residents' private user data.
+The first federal court case against a geofence warrant occurred in 2023, with a
+judge ruling the use of the search warrant unconstitutional.
+
+Google's new policy is seen as a move to "explicitly bring an end to such
+dragnet location searches." This decision aligns with recent actions by other
+tech giants, like Apple, which updated its law enforcement policies to make it
+more difficult for investigators to obtain push notification data. While
+investigators can still request an individual's full account details, Google's
+policy change addresses privacy concerns and reduces the reliance on lawmakers
+and judges to regulate wide-sweeping warrants.
+
+This policy shift by Google represents a significant step in balancing the needs
+of law enforcement with the privacy rights of individuals, potentially setting a
+precedent for how tech companies handle user data in relation to government
+requests.
+
+<a href="https://mashable.com/article/google-blocks-geofence-location-data-warrants">https://mashable.com/article/google-blocks-geofence-location-data-warrants</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>             Exploring the Veil of Crypto Stealth Addresses             </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In the realm of cryptocurrency, privacy remains a paramount concern, and stealth
+addresses emerge as a partial solution. The article from CoinTelegraph delves
+into the intricate world of stealth addresses, explaining their role in
+enhancing transaction privacy within blockchain technology. Unlike traditional
+public addresses, which are static and can be used to track financial
+activities, stealth addresses offer a unique, one-time address for each
+transaction, thereby concealing the recipient's identity and transaction
+history.
+
+The article outlines how stealth addresses work, using Monero (XMR) as a prime
+example. Monero employs stealth addresses along with other features like ring
+signatures to provide a high degree of privacy and anonymity. This approach
+makes it exceedingly difficult for external observers to link transactions to
+specific individuals or determine transaction amounts. The contrast between
+stealth addresses and regular wallet addresses is stark; the former
+significantly reduces the risk of financial activity being mapped and monitored,
+while the latter, due to its repetitive nature, is more susceptible to privacy
+breaches.
+
+However, the adoption of stealth addresses is not without challenges. The
+article points out the complexity in their implementation, which could lead to
+user errors and slower transaction processing times. Despite these drawbacks,
+the potential of stealth addresses in safeguarding financial privacy is
+undeniable. They represent a critical step towards maintaining fungibility in
+cryptocurrencies, ensuring that each unit remains indistinguishable from
+another. But how will the broader crypto ecosystem adapt to these
+privacy-enhancing features? And will traceable chains like Bitcoin ever adopt
+these features?
+
+<a href="https://cointelegraph.com/explained/what-are-stealth-addresses-and-how-do-they-work">https://cointelegraph.com/explained/what-are-stealth-addresses-and-how-do-they-
+work</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>    Privacy Progress: The 2023 Milestones of Apple, Google, and Meta    </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+2023 marked a significant year in digital privacy, with major technology
+companies, some historically less focused on privacy, making substantial strides
+in protecting user data. This Fast Company article highlights the advancements
+made by Apple, Google, and Meta, showcasing how each has contributed to
+enhancing digital privacy for their users.
+
+Apple, a long-time leader in consumer privacy, continued its commitment with the
+introduction of Advanced Data Protection in 2022, allowing end-to-end encryption
+of nearly all iCloud data. In 2023, Apple further bolstered privacy on its
+devices with features like lockable private browsing tabs in Safari, link
+tracking protection across Mail, Messages, and Safari, and Lockdown Mode for
+Apple Watch. A notable addition was iOS 17.2, introducing contact key
+verification in Messages, a tool to verify the authenticity of chat participants
+and safeguard against impersonation.
+
+Google, primarily an advertising company, made unexpected yet significant
+privacy enhancements, particularly in Google Maps. The app's upcoming update
+will enable users to store their location history, a feature known as Timeline,
+directly on their devices instead of the cloud. This shift ensures that such
+sensitive data, revealing personal routines and locations, remains private and
+accessible only to the user. Additionally, users opting for online backup will
+benefit from end-to-end encryption, ensuring even Google cannot access this
+data.
+
+Meta, often criticized for its privacy practices, made a groundbreaking change
+by introducing default end-to-end encryption for one-on-one chats in Facebook
+Messenger. This update is a major shift for one of the most widely used
+messaging apps, which previously allowed access to chat content by Facebook or
+external parties. Although currently limited to individual chats, with plans to
+extend to group chats, this move aligns Facebook Messenger with other secure
+messaging platforms like Apple's iMessage, Meta's WhatsApp, and Signal.
+
+These developments in 2023 represent a pivotal moment in digital privacy, with
+tech giants acknowledging and addressing the growing demand for data security
+and user privacy. But how will these changes shape the future of digital
+communication and user trust in these platforms?
+
+<a href="https://www.fastcompany.com/90997582/digital-privacy-had-some-big-wins-in-2023-thanks-to-apple-google-and-meta">https://www.fastcompany.com/90997582/digital-privacy-had-some-big-wins-in-2023-
+thanks-to-apple-google-and-meta</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>        U.S. Pharmacies Sharing Medical Records Without Warrants        </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+A recent congressional inquiry, as reported by Fox Business, has brought to
+light a concerning practice among the largest pharmacy chains in the U.S.: the
+provision of patients' prescription records to law enforcement without requiring
+a warrant. This revelation underscores a significant privacy issue, particularly
+in the wake of the Supreme Court's decision in Dobbs v. Jackson Women's Health
+Organization, which overturned Roe v. Wade and led to stricter abortion laws in
+several states.
+
+The article highlights that major pharmacies, including CVS Health, Walgreens
+Boots Alliance, Cigna, Optum Rx, Walmart Stores, Inc., The Kroger Company, Rite
+Aid Corporation, and Amazon Pharmacy, admitted to sharing records with law
+enforcement without warrants. This practice raises questions about the privacy
+of sensitive medical information, such as prescriptions for birth control,
+mental health medications, or abortion pills like mifepristone. The pharmacies'
+actions are legal under current Health Insurance Portability and Accountability
+Act (HIPAA) regulations, but they have sparked concerns about the potential for
+misuse of private medical data.
+
+Sen. Ron Wyden, along with Reps. Pramila Jayapal and Sara Jacobs, is leading an
+effort to urge the Department of Health and Human Services to tighten HIPAA
+regulations and end the warrantless release of medical records by pharmacies.
+While some pharmacies, like Amazon, state that they notify customers before
+disclosing health information to law enforcement (unless legally prohibited),
+others, such as CVS, Kroger, and Rite Aid, indicate that their staff face
+pressure to comply quickly with law enforcement requests.
+
+This situation presents a complex challenge: balancing the legal requirements
+and cooperation with law enforcement against the imperative to protect patient
+privacy. The article prompts critical questions about the extent to which
+personal medical information should be accessible to law enforcement and the
+measures needed to safeguard individual privacy in sensitive health matters.
+
+<a href="https://www.foxbusiness.com/politics/pharmacies-share-medical-records-police-warrants">https://www.foxbusiness.com/politics/pharmacies-share-medical-records-police-
+warrants</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>    China's Escalating Censorship: Targeting AI Videos and Pessimism    </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+China is known for its stringent internet censorship, and according to a
+TechRadar article, the country is set to intensify these efforts. The Cyberspace
+Administration of China, the nation's top censorship body, has announced plans
+to expand its censorship to include short videos, particularly those spreading
+extremism and, for the first time, content deemed pessimistic. Additionally,
+AI-generated videos are also on the censorship radar, marking a significant
+expansion in the types of content being targeted by Chinese authorities.
+
+This move is part of the broader "Qing Lang" campaign, which translates to
+"clear and bright," and has been active since 2020. The campaign has already led
+to the deletion or blocking of around 1.35 billion online accounts and 76
+million illegal or improper messages. The inclusion of "pessimism" as a target
+for censorship is particularly notable, as it suggests a new direction in the
+government's approach to controlling the narrative, especially in the context of
+China's economic recovery post-COVID-19. The crackdown on AI-powered videos,
+which can manipulate content and voices or faces, reflects growing concerns over
+the potential misuse of deepfake technology and AI-generated content.
+
+The article also discusses the role of VPNs (Virtual Private Networks) in
+circumventing these stringent censorship measures. VPNs can hide a user's real
+IP address, making it appear as if they are accessing the internet from a
+different location. This can be crucial for accessing restricted content in
+China. However, the Chinese government is also actively working to block VPNs,
+making it increasingly challenging to bypass the Great Firewall.
+
+The implications of these expanded censorship measures are significant. They not
+only restrict freedom of expression and access to information but also raise
+questions about the extent to which technology can be used to control and shape
+public discourse. As China continues to tighten its grip on the internet, the
+international community and digital rights advocates will likely scrutinize
+these developments closely.
+
+<a href="https://www.techradar.com/computing/cyber-security/china-plans-to-boost-up-its-censorship-game-to-target-ai-videos-and-pessimism">https://www.techradar.com/computing/cyber-security/china-plans-to-boost-up-its-
+censorship-game-to-target-ai-videos-and-pessimism</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>      Detecting Digital Intruders: 8 Signs Your Phone May Be Hacked     </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In an increasingly digital world, the security of our smartphones is crucial.
+TechPP's article "How to Know If My Phone Is Hacked: 8 Signs [2023]" provides
+valuable insights into recognizing if your phone has been compromised. The
+article emphasizes that a hacked phone can lead to significant threats,
+including identity theft, financial loss, invasion of privacy, unauthorized
+access to accounts, data theft, ransomware attacks, communication disruptions,
+and surveillance.
+
+The article outlines eight key signs that may indicate your phone has been
+hacked:
+
+1. Unusual Battery Drain: A hacked phone often runs hidden processes in the
+background, leading to faster battery depletion.
+
+2. Excessive Data Usage: Monitoring data usage can reveal unexpected increases,
+suggesting background activities by malicious software.
+
+3. Unfamiliar Apps: Unknown apps on your phone could be a sign of a breach.
+
+4. Slow Performance and Overheating: If your phone is relatively new but
+performs poorly or overheats, it could be under strain from unauthorized
+activities.
+
+5. Strange Behavior: Unusual activity such as apps opening by themselves or
+unrecognized calls and messages could indicate hacking.
+
+6. Interruptions During Calls: Frequent call drops or strange noises during
+calls might suggest interference.
+
+7. Unexpected Ads or Pop-ups: An increase in ads or pop-ups, especially
+unfamiliar ones, can be a red flag.
+
+8. Unexplained Transactions: Unrecognized financial transactions may indicate
+that your financial information has been compromised.
+
+9. If you suspect your phone is hacked, the article advises immediate actions
+like turning off mobile data and Wi-Fi, changing passwords using a secure
+device, installing an antivirus app, informing contacts about the breach, and
+considering a factory reset of your phone.
+
+To prevent hacks, it recommends never clicking on suspicious links, avoiding
+third-party app installations, using a VPN on public networks, regularly
+updating your phone and apps, and staying informed about cybersecurity.
+
+This comprehensive guide not only helps in identifying potential hacks but also
+provides practical steps to mitigate the risks and protect your digital privacy
+and security.
+
+<a href="https://techpp.com/2023/12/10/how-to-know-if-my-phone-is-hacked/">https://techpp.com/2023/12/10/how-to-know-if-my-phone-is-hacked/</a>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█    </span><span class=fd>SECTION 2: RESEARCH PAPERS   </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>     Enhancing Privacy in Quantum Computing: The Role of Shot Noise     </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+This paper, titled "Differential Privacy Preserving Quantum Computing via
+Projection Operator Measurements," presents a novel approach to preserving
+privacy in quantum computing. The researchers focus on the concept of quantum
+differential privacy (QDP), which is an extension of the classical differential
+privacy (DP) concept, adapted to the quantum computing context. The study's
+primary objective is to explore how shot noise, an inherent aspect of quantum
+measurements, can be utilized to achieve QDP.
+
+The methodology involves a theoretical analysis and numerical simulations to
+understand the impact of shot noise on privacy preservation in quantum
+computing. The researchers propose that by adjusting the number of measurements
+(shots) in a quantum computation, it's possible to control the level of privacy.
+This approach is based on the premise that fewer shots lead to higher
+measurement noise, which in turn enhances privacy. The paper also discusses the
+implications of adding depolarizing noise to quantum circuits, examining how
+this affects the privacy budget.
+
+The results indicate that shot noise can effectively contribute to achieving
+QDP, offering a simpler alternative to introducing additional quantum noise into
+the circuit. This finding is significant as it suggests a more straightforward
+method for enhancing privacy in quantum computing, which is crucial given the
+sensitive nature of data used in quantum algorithms. The implications of this
+research are profound for the future of quantum computing, particularly in
+fields where data privacy is paramount. However, one might question how this
+approach balances the need for accurate quantum computations with the desired
+level of privacy. Can this method be effectively implemented in practical
+quantum computing applications without significantly compromising computational
+accuracy?
+
+<a href="https://arxiv.org/pdf/2312.08210.pdf">https://arxiv.org/pdf/2312.08210.pdf</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>Task-Agnostic Privacy in Federated Learning: Balancing Utility & Privacy</span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+This research paper, titled "Task-Agnostic Privacy-Preserving Representation
+Learning for Federated Learning Against Attribute Inference Attacks," addresses
+the challenge of privacy preservation in federated learning (FL). The study's
+goal is to develop a method that protects sensitive attributes (like income,
+race, sexual orientation) in device data from being inferred by adversaries,
+while still maintaining the utility of the federated learning model.
+
+The methodology proposed is a task-agnostic privacy-preserving presentation
+learning method for FL, named TAPPFL. This method is formulated using
+information theory and aims to achieve two mutual information goals. The first
+goal is to learn data representations that contain minimal information about the
+private attribute in each device’s data, thereby protecting privacy. The second
+goal ensures that the learned data representations retain as much information as
+possible about the device data to maintain FL utility. The researchers use
+mutual information (MI) neural estimators to approximate true MI values, which
+are challenging to compute directly due to high-dimensional variables and
+intractable posterior distributions.
+
+The results demonstrate that TAPPFL effectively protects data privacy while
+maintaining FL utility. It does this by balancing the trade-off between privacy
+protection and utility preservation, a key challenge in privacy-preserving
+federated learning. The method outperforms existing defenses in both privacy
+protection and efficiency.
+
+The implications of this research are significant for the development of
+privacy-preserving federated learning models. It suggests that it is possible to
+protect sensitive attributes in device data from inference attacks without
+significantly compromising the utility of the learning model. However, a
+question arises: how does TAPPFL adapt to different types of data and privacy
+requirements in various real-world applications? Can this balance between
+privacy and utility be maintained across diverse datasets and federated learning
+scenarios?
+
+<a href="https://arxiv.org/pdf/2312.06989.pdf">https://arxiv.org/pdf/2312.06989.pdf</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>          Adaptive Image Privacy Protection Using Latin Squares         </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The paper titled "A Novel Adaptive Image Privacy Protection Method Based on
+Latin Square" introduces an innovative approach for image encryption, focusing
+on enhancing privacy protection during transmission and storage of digital
+images. The method is based on the fractional order Lü system and Latin squares,
+offering a robust solution against known plain image attacks (KPA) and chosen
+plain image attacks (CPA).
+
+The methodology involves generating self-orthogonal Latin squares (SOLSs) using
+the fractional order Lü system to scramble the bit plane of the plain image at
+the bit level. This is followed by diffusing the scrambled image at the pixel
+level to increase the encryption's robustness. The uniqueness of this method
+lies in its adaptability: the sum of each bit plane and the pixel value sum of
+the plain image are used to select Latin squares and chaotic sequences,
+respectively, making the encryption highly sensitive to the content of the
+image.
+
+The results of the study show that this method outperforms state-of-the-art
+image encryption schemes in terms of usability, security, and efficiency. The
+proposed scheme is particularly effective in resisting KPA and CPA, owing to its
+adaptive nature. The encryption process is highly sensitive to the plain image,
+ensuring that even minor changes in the image lead to significantly different
+encrypted outputs.
+
+This research has important implications for the field of digital image
+security. It presents a promising technique for securing sensitive information
+in various applications, including image storage, transmission, and cloud
+computing. However, a question that arises is how this method scales with
+different image sizes and complexities. Can it maintain its effectiveness and
+efficiency across a wide range of digital image types and sizes?
+
+<a href="https://assets.researchsquare.com/files/rs-3702841/v1_covered_8ed9b9a9-8ff2-4588-bdbe-35ab69123ee2.pdf?c=1702368300">https://assets.researchsquare.com/files/rs-3702841/v1_covered_8ed9b9a9-8ff2-4588
+-bdbe-35ab69123ee2.pdf?c=1702368300</a>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█    </span><span class=fd>SECTION 3: REGULATORY NEWS   </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>       Canada's Controversial Cybersecurity Bill: A Step Too Far?       </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Civil liberty organizations and privacy experts are raising alarms over Bill
+C-26, a new cybersecurity bill in Canada. This proposed legislation, aimed at
+bolstering cybersecurity, is seen as granting the Canadian government
+far-reaching powers, potentially at the expense of individual rights and
+privacy. Kate Robertson, a senior researcher at The Citizen Lab, University of
+Toronto, highlights the lack of adequate checks and balances in the bill, which
+could undermine public trust, democratic norms, and civil liberties in Canada.
+The bill proposes amendments to the Telecommunications Act and other laws,
+impacting everything connected to the internet, including telecommunications
+infrastructure that Canadians use daily.
+
+The implications of Bill C-26 extend beyond Canadian borders. For individuals in
+other jurisdictions, such as Europe or Africa, this development signals a
+growing trend where governments seek greater control over digital spaces under
+the guise of cybersecurity. This raises pertinent questions: How will such
+measures affect international data sharing and the privacy rights of global
+citizens? Could this lead to a domino effect, prompting other countries to enact
+similar legislation? As the digital world increasingly blurs geographical
+boundaries, the balance between national security and individual privacy rights
+remains a critical, global concern.
+
+<a href="https://www.canadianaffairs.news/2023/12/16/cybersecurity-bill-grants-ottawa-practically-unlimited-powers/">https://www.canadianaffairs.news/2023/12/16/cybersecurity-bill-grants-ottawa-
+practically-unlimited-powers/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>      Musk's X Platform Faces EU Privacy Law Violation Allegations      </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Elon Musk's social media platform, X, is under scrutiny following a complaint by
+privacy activist Max Schrems, alleging violations of the European Union's
+stringent privacy laws. The complaint, filed with the Dutch data protection
+authority by Schrems' group Noyb, accuses X of using individuals' political and
+religious beliefs for targeted advertising. This practice potentially breaches
+the EU's General Data Protection Regulation (GDPR), which prohibits targeted
+advertisements based on sensitive user data. The complaint also highlights an ad
+from the European Commission on X, targeting specific political views and
+excluding others, raising concerns about the platform's ad targeting mechanisms.
+
+This development is significant for global audiences, especially those concerned
+with privacy and data protection. The EU's GDPR is one of the strictest privacy
+laws worldwide, and its implications extend beyond European borders. For
+individuals and businesses in other regions, such as Africa or Asia, this case
+underscores the importance of understanding and complying with GDPR, especially
+when operating in or targeting EU citizens. It also raises broader questions:
+How will platforms balance targeted advertising with privacy rights? And what
+are the global implications of Europe's stringent privacy standards on
+international social media platforms?
+
+<a href="https://www.cnbc.com/2023/12/14/musks-x-hit-with-complaint-alleging-it-broke-europes-privacy-laws.html">https://www.cnbc.com/2023/12/14/musks-x-hit-with-complaint-alleging-it-broke-
+europes-privacy-laws.html</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>              Meta vs. FTC: A Clash Over Privacy and Power              </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Meta Platforms, the parent company of WhatsApp, Instagram, and Facebook, is
+embroiled in a legal tussle with the U.S. Federal Trade Commission (FTC) over a
+2019 privacy agreement. The dispute, set for a hearing in late January, revolves
+around Meta's request to halt the FTC from modifying this agreement. The FTC's
+proposed changes, sparked by allegations that Meta misled parents about their
+control over contacts in the Messenger Kids app, aim to tighten privacy
+protections, particularly for young users. These include a ban on Meta profiting
+from young users, including in its virtual reality business, and expanded
+restrictions on facial recognition technology.
+
+This legal battle is significant not just for Meta and the FTC, but also for
+global audiences, especially those concerned with digital privacy and the
+influence of major tech firms. The outcome of this case could have far-reaching
+implications. For instance, if the FTC's proposed changes are implemented, it
+could set a precedent for stricter privacy regulations affecting tech companies
+worldwide. This raises important questions: How will these changes impact the
+balance between innovation and privacy? What does this mean for the future of
+digital services targeted at younger audiences? And how will other countries
+view and potentially mirror these regulatory actions?
+
+The case also highlights the ongoing tension between tech giants and regulatory
+bodies over privacy and competition. With Meta also facing an antitrust lawsuit
+from the FTC, the broader issue of how large tech firms are regulated and held
+accountable for their practices is brought into sharp focus. This ongoing legal
+saga underscores the complex relationship between technological advancement,
+user privacy, and regulatory oversight in the digital age.
+
+<a href="https://www.reuters.com/technology/us-judge-hear-meta-privacy-dispute-with-ftc-next-month-2023-12-11/">https://www.reuters.com/technology/us-judge-hear-meta-privacy-dispute-with-ftc-
+next-month-2023-12-11/</a>
+
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>            That's all for this edition, see you next time!             </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+</pre>
+</div>
+</body>
+</html>
