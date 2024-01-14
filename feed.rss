@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>The Tari Weekly Whisper</title>
+  <link>https://weeklywhisper.tari.com</link>
+  <description>Welcome to the Tari Weekly Whisper, where we cover developments and news every week that privacy lovers will actually care about!</description>
+  <item>
+    <title>Edition 0001</title>
+    <link>https://weeklywhisper.tari.com/edition0001.html</link>
+    <description>This edition delves into AI's role in reuniting families, the complexities of personal information removal services, and the intricacies of government surveillance on push notifications. Additionally, it examines the privacy implications of modern vehicle technology, Meta's rollout of end-to-end encryption, and Proton's privacy-first approach to photo backup. It also navigates the challenges of email tracking and presents insightful research papers and regulatory news.</description>
+  </item>
+  <item>
+    <title>Edition 0002</title>
+    <link>https://weeklywhisper.tari.com/edition0002.html</link>
+    <description>This edition brings pivotal privacy updates: WhatsApp's 'View Once' voice messages revolutionize secure communication, while insightful strategies for maintaining privacy in retail discounts are revealed. Explore the critical differences between iCloud Private Relay and VPNs, and understand Google's new policy limiting geofence warrants. Additionally, delve into the complex world of cryptocurrency stealth addresses, offering enhanced transaction privacy.</description>
+  </item>
+  <item>
+    <title>Edition 0003</title>
+    <link>https://weeklywhisper.tari.com/edition0003.html</link>
+    <description>Edition 0003 delves into pressing privacy issues: China's erosion of online anonymity, the debate over facial recognition at U.S. airports, and the privacy implications of Google Chrome's latest updates. It also offers practical advice for reclaiming digital privacy and discusses the privacy risks of AI advancements in location prediction.</description>
+  </item>
+</channel>
+
+</rss>
