@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Tari Weekly Whisper - Edition 0004</title>
+<style type="text/css">
+ body { background-color: #000; }
+ a { color: #f5f }
+ a:link { text-decoration: none; }
+ a:visited { text-decoration: none; }
+ a:hover { text-decoration: none; }
+ a:active { text-decoration: none; }
+ .container { text-align: center; }
+ .container pre {
+       font-family:Courier New, Lucida, monospace;
+       font-size:16px;
+       color: #ccc;
+       display: inline-block;
+       text-align: left;
+     }
+ input {
+       font-family:Courier New, Lucida, monospace;
+       font-size:16px;
+       color: #ddd;
+       background-color: #111;
+       border: 1px solid #aaa;
+       border-radius: 3px;
+       margin-bottom: 0px;
+     }
+ .mt { margin-left: auto; margin-right: auto }
+ .f4 { color: #00a }
+ .f5 { color: #a0a }
+ .f7 { color: #aaa }
+ .f8 { color: #555 }
+ .fd { color: #f5f }
+ .b0 { background-color: #000 }
+ .b4 { background-color: #00a }
+ .b5 { background-color: #a0a }
+ .b7 { background-color: #aaa }
+ .b8 { background-color: #555 }
+</style>
+</head>
+<body>
+<div class="container">
+<pre><span class="fd b0"><span class=f0>
+                                   </span><span class=f8>· ──▄▄
+                                  ·-▄▄▀</span>▄▄<span class=f8>▀▄─·
+                           -─▄▄▄▀▀▄▀</span>▄ <span class=b4>█▐</span>▀▀<span class=f8>▐═-
+                         ─▄▀▀</span>▄▄▄▐█ █<span class=b4>▐</span><span class=f7> </span><span class=b4>█░█</span><span class=f8>▐▀
+          ·─▄▄▀▀▀▄▄▄▄     ▌</span><span class=b4>██░▐</span>▀▐██<span class=b4>░▐</span><span class=f7> </span>█<span class=b4>█</span>▄▄<span class=f8>▀▄
+      -──▄▄▀</span><span class=f5>▄▄</span><span class="f5 b4">▓▓▓</span><span class=f5>▄▄▄▄</span><span class=f8>▀▀▀▀▄█  </span><span class=b4>▓█</span><span class=f8> </span>██ ▀▀      <span class=f8>▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀▀▄
+      ▄▀▀</span><span class=f5>▄▄</span><span class="f5 b4">▓▓</span><span class=f5>▀▀  ▀▀▀▀</span><span class="f5 b4">▓▓▓▓</span><span class=f5>▄▄  </span>█<span class=b4>▄█▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀▀</span>█<span class=f8>▐─·-
+    ▄▀</span><span class=f5>▄</span><span class="f5 b4">██</span><span class=f5>▀▀              </span><span class="f5 b4">▓▓</span>  ▐<span class=b4>▌ </span><span class="f4 b5">▓▓▒▓</span><span class=b4> ▐</span>▌ ▐█<span class="f4 b5">▒</span><span class=b4>▄▄▄▄▄</span><span class="f4 b5">▓▒</span>▌ █<span class="f4 b5">▓▒</span><span class=b4>▄▄▄▄▄</span><span class="f4 b5">▓</span><span class=b4>▐</span>▌ ▐<span class=b4>▄</span><span class="f4 b5">█▓▓▒▓█</span><span class=b4>▄</span>▌<span class=f8>█═─
+ -══█ </span><span class=f5>███████▄▄▄         </span><span class="f5 b4">▓▓</span>   ▀▀█<span class="f4 b5">▒░</span>█▀▀  █<span class="f4 b5">▒░</span>█ <span class=f8>░ </span>█<span class="f4 b5">▒░</span>█ █<span class="f4 b5">▒░</span>█ <span class=f8>░ </span>█<span class="f4 b5">▒</span><span class=b4>▐</span>▌<span class=f8>░ </span>▀▀█<span class="f4 b5">▒░</span>█▀▀<span class=f8>▄▀
+    █ </span><span class=b5>░░</span><span class=f8>░   </span><span class=f5>▀▀▀▀███▄▄▄▄  </span><span class=b5>  </span><span class=f7>     </span>█<span class="f4 b5">░ </span>█    █<span class="f4 b5">░ </span>█▄▄▄█<span class="f4 b5">░ </span>█ █<span class="f4 b5">░ </span>█▄▄▄<span class=b5>▌</span><span class="f4 b5">░</span>█ <span class=f8>░░  </span>█<span class="f4 b5">░ </span>█ <span class=f8>█══- -
+  ·─█ </span><span class=b5>▒▒</span><span class=f8>▒░░░░░░ </span><span class=b5> </span><span class=f5>█ ▀▀▀▀</span><span class=b5>░░░░</span><span class=f7>     </span>█<span class=b5> ░</span>█    █<span class=b5> ░▄▄▄▄▄ ░</span>█ █<span class=b5> ░▄▄▄▄▄▐</span>▄  <span class=f8>░░ </span>█<span class=b5> ░</span>█ <span class=f8>█
+    █ </span>▀<span class=b5>▓▓</span><span class=b8>▄</span><span class=f8>▒▒▒▒▒░</span><span class=b5>░ </span><span class=f8>░░░░ </span>▄<span class=b5>▒▒</span><span class=f5>▀     </span>█<span class=b5>░▒</span>█    █<span class=b5>░▒</span>█   █<span class=b5>░▒</span>█ █<span class=b5>░▒</span>█   █<span class=b5>░░</span>█ <span class=f8>░░ </span>█<span class=b5>░▒</span>█ <span class=f8>█─-─·
+     ▀▄ </span>▀█<span class=b5>▓</span>█<span class=b8>▄</span><span class=f8>▓▓▒</span><span class=b5>▒░</span><span class=f8>▒▓▒</span><span class=b8>▄</span><span class=b5>▓▓</span>▀ <span class=f8>░  ░  </span>█<span class=b5>▒▓</span>█  <span class=f8>░ </span>█<span class=b5>▒▓</span>█ <span class=f8>░ </span>█<span class=b5>▒▓</span>█ █<span class=b5>▒▓</span>█ <span class=f8>░ </span>█<span class=b5>▒▒</span>█ <span class=f8>░  </span>█<span class=b5>▒▓</span>█ <span class=f8>▀▄
+       ▀▄ </span>▀▀██<span class=b8>▄</span><span class=f8>▓</span><span class=b5>▓▒</span><span class=f8>▓</span><span class=b8>▄</span>█<span class=b5>▓</span>▀ <span class=f8>░▒▒░░▒░ </span>█<span class=b5>▓█</span>█ <span class=f8>░▒ </span>█<span class=b5>▓</span>██ <span class=f8>▒ </span>█<span class=b5>▓</span>██ █<span class=b5>▓</span>██ <span class=f8>▒ </span>█<span class=b5>▓▓</span>█  ▄█<span class=b5>█▓█</span>██▄ <span class=f8>▀▄
+  · - ───▀▀▄ </span>▀██<span class=b5>▓▓</span>██▀ <span class=f8>▒▒▒▓▓▒▒▓▒ </span>█<span class=b4>█</span>█▌<span class=f8>▒▒▓ </span>███▌<span class=f8>▓▓▌</span>▐███ ███▌<span class=f8>▒▓▒</span>▐███ ██████████ <span class=f8>█═─ ·
+            ▀▄ </span>▀█<span class=b5>▓</span>▀ <span class=f8>▓▓▓▓▓</span><span class="f8 b7">█</span><span class=f8>█▓▓█▓░▄▄▄▄▓▓█▓▄▄▄▄██▓▄▄▄▄▀▄▄▄▄▓█▓▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄█─ ·
+▄▀▀▄▀▀▄▀▀▀▀▀▄▀▀▀▄▄▀▀▀▓▀▀▓▀▀▀▓▀▀▀▀▀▀▓▀▀▀▓▀▀▒▀▀▓▀▀▒▀▀▀▀▀▓▓▀▀▀▒▓▀▀▀▀▀▓▀▀▀▀▀▓▀▀▀▀▀▄
+▌</span><span class=b7>▓</span>▌▄▐█ <span class=b7>▓</span>███<span class=b7>█</span><span class=f7> </span><span class=b7>▓</span>████ <span class=b5>▓</span>█ <span class=b7>▓█</span><span class=f7> </span><span class=b5>██</span> <span class=f8>▒ </span><span class=b7>▓</span>█<span class=f4>▄</span><span class=b7>▓</span>█  <span class=b7>▓</span>▌▄▐█ <span class=b7>▓█</span> <span class=b7>▓</span><span class=b5>▓</span><span class=f7> </span><span class=b7>▓</span>████ ▄<span class=b7>▓</span>█<span class=b5>▓</span>▄ <span class=b7>▓</span>████ <span class=b7>▓</span>████ <span class=b7>▓</span>████<span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b5>▓</span>▌<span class=b5>▓</span>▐<span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄</span>▄ <span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄</span>▄ <span class=f4>▓</span><span class=b5>▒▓</span><span class=b4>▄</span><span class=b5>▓</span>▀<span class=f4>░</span><span class=b5>▓▓</span><span class=f7> </span><span class=f8>░ </span><span class=b4>▐</span><span class=b5>▓</span><span class=b4>▄</span><span class=b5>▓</span>▌ <span class=f4>░</span><span class=b5>▓</span><span class=b4>▌</span><span class=b5>▓</span><span class=b4>▐</span><span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span>▄<span class=b5>▓▒</span><span class=f7> </span><span class=f4>▐</span><span class=b4>▐</span>█▌ <span class=f4>░</span>█<span class=b5>▓</span><span class=b4>▄▀</span>▀<span class=f4>░</span><span class=b5>█▓</span><span class=b4>▄</span>▄<span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄▄</span><span class=f7> </span><span class=f4>░</span><span class=b5>█▓</span><span class=b4>▄</span>▄<span class=b5>▓</span><span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b5>▒▒▒▒▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=f4>▀  ░</span><span class=b5>▒▒</span><span class=f4>▀  ▒</span><span class=b5>░▒</span><span class=b4>▀</span>█<span class=b5>▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=f7>   </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>▒</span>▌  <span class=f4>▒</span><span class=b5>▒▒▒▒▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=b4>▀</span><span class=b5>▒░</span><span class=f7> </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>▓</span>▌  <span class=f4>▒</span><span class=b4>▀</span><span class=b5>▒░</span>▄<span class=f4>▒</span><span class=b5>▓▒</span><span class=b4>▀</span>▀ <span class=f4>▒</span><span class=b5>▒▒</span><span class=f4>▀  ▒</span><span class=b5>▓▒</span><span class=b4>▀</span><span class=b5>▒</span>▄<span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b4>▀</span><span class=b5>░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>░░░░ </span><span class=f4>░</span><span class=b5>░░░░ </span><span class=f4>█</span><span class=b5> ░</span><span class=f7> </span><span class=b4>▐</span><span class=b5>░</span><span class=f4>▓</span><span class=b5>░░░  </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>░</span>▌ <span class=f8>▄</span><span class="f8 b4">▌</span><span class=b4>▀</span><span class=b5>░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>░░</span><span class=f4>▓</span><span class=b5>░ </span><span class=f4>▓</span>█<span class=b5>▓▒░ </span><span class=f4>▓</span><span class=b5>░▒</span><span class=f5>▄</span><span class=b5> </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>▒░</span>   <span class=f4>▓</span><span class=b5>░░░░ </span><span class=f4>▓</span><span class=b5>▒░</span><span class=f4>▓</span><span class=b5>░▒</span><span class=f8>▐
+▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀ ▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄</span><span class=f8>▄▀▀▀▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄</span><span class=f8>▀ </span></span>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                               EDITION 0004                               </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Welcome to Edition 0004 of the Tari Weekly Whisper, where we cover developments
+and news coming out over the last week that privacy lovers will actually care
+about! Let's dig in...
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>            SUBSCRIBE            </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>                                                                        </span><span class=f8>▓</span>
+<div id="mc_embed_shell"><div id="mc_embed_signup"><form action="https://tari.us21.list-manage.com/subscribe/post?u=4f96c06b5fbb802894cb40fe9&amp;id=f4ba4af258&amp;f_id=00a7e7e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate=""><div id="mc_embed_signup_scroll"><div class="mc-field-group"><span class=f8>  █       </span><span class=fd><label for="mce-EMAIL">Email Address (required, obviously)  </label></span><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span><span class=f8>        ▓</span>
+<span class=f8> █                                                                          </span><span class=f8>▓</span></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display: none;"></div><div class="response" id="mce-success-response" style="display: none;"></div></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f96c06b5fbb802894cb40fe9_f4ba4af258" tabindex="-1" value=""></div><div class="clear"><span class=f8>  █                              </span><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="    Subscribe    "><span class=f8>                         ▓</span></div></div></form></div></div><span class=f8> █                                                                          </span><span class=f8>▓</span>
+<span class=f8>  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>     SECTION 1: PRIVACY NEWS     </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+                                                                                
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>    Tari Introduces Enhanced Bug Bounty Program Ahead of Mainnet Launch   </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Tari, a protocol for digital assets, has significantly upgraded its bug bounty
+program, an initiative aimed at enhancing the security of its platform. In an
+update posted on January 10, 2024, the Tari team announced an increase in the
+rewards for identifying vulnerabilities, particularly in the form of Tari
+tokens. This move coincides with the impending launch of the Minotari mainnet,
+marking a crucial phase in Tari's development.
+
+The updated bug bounty program, managed in partnership with HackerOne, offers
+bounties up to $250,000 worth of XTR (Minotari tokens) for critical bugs such as
+consensus-breaking vulnerabilities. The program also provides cash rewards for
+various levels of security flaws, ranging from minor bugs to critical issues.
+For example, critical vulnerabilities can fetch up to $5,000 in cash, while
+high-severity issues offer up to $2,000. Medium and low-severity vulnerabilities
+attract rewards of $750 and $100, respectively.
+
+In addition to cash bounties, token-based rewards will be issued, with critical
+issues potentially earning between $100,000 to $250,000 in Minotari tokens.
+These token rewards are contingent on the post-launch price stabilization of
+Minotari. The bounty program emphasizes that token rewards can only be claimed
+post-launch, with a short delay to allow for price stabilization. All cash
+rewards, however, will be disbursed through HackerOne, and participants are
+required to register with the platform to claim them.
+
+This enhanced bug bounty program reflects Tari's commitment to security and
+community engagement, encouraging ethical hackers and security researchers to
+contribute to the robustness of the Tari ecosystem.
+
+<a href="https://www.tari.com/updates/2024-01-10-update-125">https://www.tari.com/updates/2024-01-10-update-125</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>  Apple's AirDrop Vulnerability: A Privacy Breach Unaddressed Since 2019  </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In a startling revelation, security researchers have highlighted a significant
+privacy breach in Apple's AirDrop feature, first reported to Apple in 2019, yet
+apparently unaddressed. This flaw, according to a CNN report, has been recently
+exploited by Chinese authorities to track down AirDrop users, raising serious
+global privacy concerns. The feature, popular for sharing photos and documents
+among nearby Apple users without needing an internet connection, was compromised
+by a Beijing-based tech firm, enabling the identification of users allegedly
+sharing "inappropriate information" on the Beijing subway.
+
+The exploit of this vulnerability is particularly alarming given AirDrop's
+widespread use, including by pro-democracy activists in Hong Kong. Researchers
+from the Technical University of Darmstadt in Germany had discovered these flaws
+and even proposed a fix in 2021, but Apple seems not to have implemented these
+changes. The vulnerability involves collecting basic identifying information
+during AirDrop use, which, due to Apple's lack of additional security measures
+like "salting," can be reverse-engineered from encrypted data. This oversight by
+Apple has prompted urgent calls for transparency and action from internet
+freedom advocates and top US lawmakers, concerned about the privacy and safety
+of iPhone users worldwide.
+
+The implications of this revelation are far-reaching. Not only does it spotlight
+Apple's inaction in addressing known vulnerabilities, but it also raises
+questions about the company's relationship with China, where Apple is
+significantly invested. With the Chinese government's track record of leveraging
+private sector technology for surveillance, this incident could have chilling
+effects on the use of Apple's features like AirDrop for secure communication,
+especially among dissenters. How Apple responds to this situation could redefine
+its stance on user privacy and security in an increasingly digital and monitored
+world.
+
+<a href="https://edition.cnn.com/2024/01/12/tech/china-apple-airdrop-user-encryption-vulnerability-hnk-intl/index.html">https://edition.cnn.com/2024/01/12/tech/china-apple-airdrop-user-encryption-
+vulnerability-hnk-intl/index.html</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>          Maximize Your PS5 Privacy: Essential Settings to Adjust         </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The PS5, Sony's latest gaming console, comes packed with an array of privacy
+settings that many users may not be fully aware of. In an era where consumer
+electronics, including game consoles, are increasingly inclined to collect and
+share user data, understanding and managing these settings is crucial for those
+concerned about their digital footprint. This Kotaku article delves into the
+various privacy settings available on the PS5, offering a guide on how to
+customize them to suit individual preferences and enhance privacy.
+
+Starting with basic customization features, the article walks through the
+process of navigating the PS5's settings to access privacy options. Users can
+control who sees their real name, profile picture, friends list, and gaming
+activities. An interesting feature highlighted is the ability to hide specific
+games from one's status, providing a layer of discretion over gaming habits. The
+article also discusses broader privacy profiles, which offer a quicker way to
+adjust settings in line with predefined privacy levels.
+
+More importantly, the piece touches on the settings for data and personalized
+information collection, including voice data during online play, and
+personalized ads and media recommendations. For those aiming for maximum
+privacy, turning off these features is recommended. The article emphasizes that
+many of these privacy-invading features are enabled by default on the PS5,
+highlighting the importance of proactively managing these settings. Whether
+you're a social gamer or a privacy-conscious user, this guide provides valuable
+insights into securing your personal information on the PS5.
+
+<a href="https://kotaku.com/ps5-privacy-settings-ads-friends-sharing-1851157131">https://kotaku.com/ps5-privacy-settings-ads-friends-sharing-1851157131</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>             The Hidden Dangers of Sharing Kids' Photos Online            </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The increasing use of artificial intelligence (AI) has introduced new challenges
+to maintaining children's privacy online, especially when it comes to posting
+their pictures. This Deseret News article sheds light on the dangers of AI in
+the context of sharing children’s images on social media and offers insights on
+how to combat these privacy issues. With the proliferation of AI tools capable
+of altering images, the seemingly harmless act of sharing kids' photos can have
+unforeseen consequences.
+
+The article cites instances, like a case reported by The Wall Street Journal,
+where male students used AI to create fake nude photos of their female
+classmates from pictures found on social media. This highlights the ease with
+which AI can manipulate images, potentially leading to harmful outcomes. Experts
+like Wael Abd-Almageed from the University of Southern California’s Information
+Sciences Institute warn that once a child's photo is uploaded online, it's
+nearly impossible to control its spread. These images can be reshared, archived,
+and even find their way into encrypted chats or the dark web.
+
+Addressing this issue, the article suggests caution and reflection before
+posting a child’s image online. It urges parents to consider the permanence of
+online data and offers practical advice on how to report and request the removal
+of such content from platforms like Facebook and TikTok. The concept of
+"sharenting," where parents extensively share their children’s lives on social
+media, is also examined. The article encourages parents to ponder questions like
+whether they would share certain information with a stranger or how it might
+affect their child's trust and privacy. In an era where digital footprints are
+indelible, this piece serves as a critical reminder for parents to be more
+mindful of their children’s digital privacy.
+
+<a href="https://www.deseret.com/2024/1/10/24032025/posting-kids-online-ai">https://www.deseret.com/2024/1/10/24032025/posting-kids-online-ai</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>           Debunking the Roblox Biometric Location Tracking Myth          </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+A recent viral post on Facebook sparked widespread concern by claiming that the
+popular video game platform Roblox uses 'biometric location tracking' to reveal
+users' locations. However, this claim has been proven false, according to a USA
+Today fact-check. Roblox, a widely used gaming platform, does not collect
+precise location data from its users, contrary to the alarming assertions made
+in the post. Any personal information, such as precise location or address,
+shared in chat rooms or public forums on Roblox is actively filtered and removed
+to protect users' privacy.
+
+The article clarifies that biometric data, which refers to unique physical
+characteristics used for automated recognition, is entirely separate from
+physical location tracking. Roblox does collect some form of biometric data,
+specifically face geometry, but this is solely for the purpose of identity and
+age verification and has no connection to physical location tracking. Experts in
+the field of information sciences and cybersecurity underscore the importance of
+understanding the nature of data collected by platforms like Roblox and the
+potential privacy risks associated with sharing personal information online.
+
+Parents are advised to be vigilant about their children’s online activities and
+privacy settings. While Roblox does not pose the specific threat claimed in the
+viral post, experts emphasize the broader risks associated with sharing
+information with strangers online, including the potential for radicalization in
+some extreme cases. This fact-check serves as a reminder of the importance of
+critical evaluation of online claims, especially those related to privacy and
+security in digital platforms.
+
+<a href="https://www.usatoday.com/story/news/factcheck/2024/01/10/false-claim-roblox-uses-biometric-location-tracking-fact-check/72151943007/">https://www.usatoday.com/story/news/factcheck/2024/01/10/false-claim-roblox-uses
+-biometric-location-tracking-fact-check/72151943007/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>        Punkt.'s New Privacy-Centric Smartphone with Apostrophy OS        </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+At CES 2024, Swiss company Punkt. introduced the MC02, the first smartphone to
+feature Apostrophy OS, a new Android-based operating system designed to
+prioritize user privacy. According to PCMag, Apostrophy OS offers a
+"privacy-first" approach, giving users complete control over their personal
+data, a feature increasingly sought after in today's digital age. The OS is
+based on the open-source foundation of Android, and it uniquely allows users to
+maintain their existing apps while ensuring privacy.
+
+The MC02 aims to provide a full Android experience, including the option to use
+Google services if desired. Apostrophy OS operates on a bespoke, OS-level
+implementation of AOSP 13 and is divided into segments. One segment is dedicated
+to protecting personal data and app integrity, while another, sandboxed area
+permits access to Google's Play Store and the extensive range of mobile apps
+available there. Interestingly, Apostrophy asserts that standard Android apps on
+their platform only exchange data with app developers, not third parties like
+Google, ensuring that one developer's app can't track usage of other apps.
+
+Further emphasizing its commitment to privacy, the MC02 features built-in VPN
+services and a Ledger tool for managing app permissions more intuitively. The
+device itself, designed in Europe and manufactured in China, boasts a 6.7-inch
+screen, a MediaTek Dimensity 900 processor, 6GB RAM, 128GB storage, and a
+5,500mAh battery. It also includes a 64MP main camera, an 8MP wide-angle camera,
+a 2MP depth-sensing camera, and a 24MP selfie camera, along with 5G, Bluetooth
+5.2, and Wi-Fi 6 support.
+
+Priced at $749, the MC02 is now available for preorder and is expected to ship
+by the end of January. This collaboration between Punkt. and Apostrophy reflects
+a growing trend towards privacy-centric technology, catering to consumers
+increasingly concerned about their digital privacy and data security.
+
+<a href="https://www.pcmag.com/news/ces-2024-punkt-partners-with-apostrophy-for-privacy-first-phone">https://www.pcmag.com/news/ces-2024-punkt-partners-with-apostrophy-for-privacy-
+first-phone</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>     The Perils of Over-Sharing on Holiday: A Privacy Expert's Warning    </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+When on a dream vacation, staying at a luxurious hotel can be a highlight worth
+sharing. However, Trevor Cooke, an online privacy expert at EarthWeb, warns of a
+common mistake many travelers make: posting pictures of their hotel room or
+location in real-time on social media. This act of digital sharing, meant to
+express joy and excitement, can inadvertently compromise your safety and
+privacy.
+
+Cooke advises against revealing your exact location or the duration of your stay
+by posting hotel room pictures. Such posts can make you vulnerable to stalking,
+targeted theft, or other security breaches. Another critical piece of advice is
+to never disclose your room number online, as it could lead to unauthorized
+charges to your account or other forms of criminal activity.
+
+The risks extend beyond hotel stays. Posting airport check-in pictures or
+boarding passes can signal to potential criminals that your home is unoccupied.
+This, along with location-tagged photos, can expose your personal information,
+putting your address, bank details, and overall safety at risk. To maintain
+privacy and security, Cooke suggests waiting until you're safely back home to
+share holiday memories.
+
+This cautionary tale is not limited to social media behavior. A new scam
+targeting hotel guests involves fraudsters calling your room, pretending to be
+hotel staff, and asking for credit card details. Carolyn Pearson, CRO of travel
+safety business Maiden Voyage, highlights this as an emerging threat for
+travelers. The overarching message is clear: while sharing holiday experiences
+is enjoyable, doing so responsibly is crucial for maintaining your privacy and
+safety.
+
+<a href="https://www.thesun.co.uk/travel/25285172/privacy-expert-hotel-mistake-safety/">https://www.thesun.co.uk/travel/25285172/privacy-expert-hotel-mistake-safety/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>            The Escalating Battle for Biometric Privacy in 2024           </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In her Wired article, Joy Buolamwini highlights the pressing challenges of
+biometric privacy in 2024, driven by the rampant use of AI-powered facial
+recognition and the rise of biometric identity theft. Individuals are
+increasingly using generative AI tools and abundant online data for sinister
+purposes, such as voice cloning scams. This trend is exemplified by an incident
+in Arizona, where a mother received a distress call imitating her daughter's
+voice, demanding money. Such scams are just the tip of the iceberg, with future
+threats potentially involving more personalized and emotionally manipulative
+tactics.
+
+The misuse of biometric data extends beyond personal scams. It has profound
+implications in law enforcement and governance. People of color and other
+vulnerable groups face a higher risk of misidentification, leading to wrongful
+arrests and detentions. The advent of generative AI allows for the creation of
+false evidence, such as fabricated videos of alleged confessions. This
+technology is not confined to state entities; its increasing accessibility means
+that it could be used for creating deepfakes, intensifying threats like revenge
+porn and child exploitation on the dark web.
+
+As a response to these escalating privacy breaches, 2024 witnesses a rise in
+anti-surveillance measures. Fashion statements double as privacy tools, with
+face coverings emerging as both stylistic choices and necessary protections in
+regions banning public biometrics. Parents advocate for their children to be
+“biometric naive,” free from government or institutional data capture.
+Innovations like eyewear to obscure ocular biometrics and 3D-printed face
+prosthetics also gain traction, though their legality varies worldwide. In this
+landscape, viewing an unaltered face becomes an unusual, intimate occurrence,
+underscoring the deep impact of biometric surveillance on privacy and societal
+norms.
+
+<a href="https://www.wired.com/story/the-battle-for-biometric-privacy/">https://www.wired.com/story/the-battle-for-biometric-privacy/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>      Exploring Zuckerberg's Stance on Privacy and Facebook's Impact      </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In a Sky News article, Dr. Michael Zimmer, a university professor and privacy
+expert, delves into the intricate world of Facebook and its founder, Mark
+Zuckerberg. Dr. Zimmer, who has meticulously recorded "every single thing"
+Zuckerberg has said in public since 2004 in an archive known as "The Zuckerberg
+Files," sheds light on the evolving privacy concerns surrounding Facebook. The
+archive, consisting of over 1,500 transcripts of Zuckerberg's public remarks,
+offers a unique perspective on the social media giant's approach to user privacy
+and data usage.
+
+Dr. Zimmer acknowledges the real and significant privacy concerns surrounding
+Facebook, particularly in how user data is collected and used. He stops short of
+advising users to delete their accounts, recognizing the benefits of being on
+the platform. Instead, he emphasizes the importance of users understanding and
+managing their privacy settings. He notes that Facebook has improved its privacy
+management tools, but suggests there's room for more enhancement.
+
+Zuckerberg's own public posts, especially those about his family, reflect a
+cautious approach to privacy, rarely showing his children's faces, presumably to
+avoid facial recognition technologies. This personal practice seems in contrast
+to the tools his platform offers for scanning users' pictures and faces. The
+article also touches on the broader implications of Facebook's data practices,
+particularly in developing countries where the platform's misuse has led to
+harm. Dr. Zimmer believes Zuckerberg has had a generally positive impact but has
+been naive about the broader effects of his platforms. He suggests that while
+Zuckerberg cannot rectify past issues, he can acknowledge them and engage more
+proactively to ensure his legacy remains positive.
+
+This exploration of Zuckerberg's public remarks and Facebook's privacy practices
+provides valuable insights into the complex relationship between social media,
+personal privacy, and global impact.
+
+<a href="https://news.sky.com/story/should-you-delete-your-facebook-account-heres-what-the-man-who-records-all-zuckerbergs-remarks-thinks-13042612">https://news.sky.com/story/should-you-delete-your-facebook-account-heres-what-
+the-man-who-records-all-zuckerbergs-remarks-thinks-13042612</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>       Google's Shift Away from Cookies: A New Era for Chrome Users       </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Google has begun its long-anticipated move to phase out third-party cookies in
+its Chrome browser, signaling a significant shift in how user data is handled
+online. This change, as reported by Mashable, started with about one percent of
+Chrome users, amounting to approximately 30 million people. This move is part of
+Google's broader plan, announced back in 2020, to enhance user privacy and
+address growing concerns over how personal data is used and shared online.
+
+The decision to stop supporting third-party cookies comes amid scrutiny from EU
+and UK regulators, who were concerned about the potential unfair advantage it
+could give Google over its competitors. Third-party cookies have been a staple
+of the internet for years, used for various purposes from storing user
+preferences and login information to more controversial uses like tracking user
+behavior and compiling detailed user profiles for advertising.
+
+Google's new approach, dubbed the "Privacy Sandbox initiative," aims to create a
+new system for ad customization that respects user privacy. This system will not
+rely on the widespread tracking of individual user data. Instead, it introduces
+the "Ad Topics" API feature, which categorizes users based on their interests
+and presents tailored ad experiences based on these categories. This data is
+stored on the user's device, theoretically keeping it out of reach of third
+parties.
+
+For users eager to embrace this new era of privacy, Google provides the option
+to manually disable third-party cookies in Chrome settings. While this may lead
+to minor inconveniences, such as sites not remembering logins or preferences, it
+marks a significant step towards greater control over personal data and privacy
+online.
+
+<a href="https://mashable.com/article/google-killing-cookies-chrome">https://mashable.com/article/google-killing-cookies-chrome</a>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>    SECTION 2: RESEARCH PAPERS   </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>               Navigating Big Data and Privacy in Government              </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In the digital age, governments accumulate vast amounts of data. While this data
+can enhance governance and public services, it also raises significant privacy
+concerns. Tianlong Wu's research paper, "Research on Government Data Openness
+and Citizen Privacy Protection in the Context of Big Data," delves into this
+crucial balance. The paper primarily discusses how to improve the transparency
+of government data while ensuring personal privacy protection in a big data
+environment.
+
+The study identifies the main issues in government data openness and citizen
+privacy protection. One major challenge is the inadequate legal system for
+privacy protection, especially in the context of rapidly evolving big data
+technologies. There's also a notable lack of a comprehensive data open
+supervision and management mechanism, leading to inefficient utilization and
+potential privacy breaches. Public awareness and participation in data-related
+processes remain low, often resulting in a 'digital divide' where vulnerable
+groups face difficulties in accessing and utilizing government data.
+
+Wu suggests several measures to address these challenges. These include
+establishing a sound legal and regulatory system for data openness and privacy
+protection, improving data management and supervision mechanisms, and enhancing
+public awareness about the significance of government data openness. The paper
+emphasizes that while the government's data disclosure work has made significant
+progress, it requires ongoing adjustments and improvements to meet the
+challenges of the big data era.
+
+This research brings forth the essential question: How can we ensure that the
+benefits of open government data are maximized without compromising individual
+privacy? As we move forward, striking this balance will be crucial for
+democratic governance and the protection of citizens' rights.
+
+<a href="https://www.atlantis-press.com/article/125997038.pdf">https://www.atlantis-press.com/article/125997038.pdf</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>             Quantum-Proofing Critical Infrastructure Security            </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In the evolving landscape of cybersecurity, the rise of quantum computing poses
+new challenges, especially for critical infrastructures like power grids and
+water systems. The paper "Cybersecurity in Critical Infrastructures: A
+Post-Quantum Cryptography Perspective" by Javier Oliva del Moral et al.
+addresses these challenges by exploring the integration of post-quantum
+cryptography (PQC) in protecting critical infrastructure.
+
+The paper highlights the vulnerability of current cryptographic systems to
+quantum computing attacks, emphasizing the need for PQC, which remains secure
+against both classical and quantum computational threats. It delves into various
+PQC methods, including lattice-based, hash-based, code-based, and isogeny-based
+cryptography, examining their suitability for critical infrastructure systems.
+
+A key takeaway is the complex balance between implementing robust security
+measures and maintaining the operational efficiency of critical infrastructures.
+The paper underscores the importance of low-latency, high-performance
+cryptographic solutions in industrial settings, where even minor delays can lead
+to significant disruptions.
+
+This research prompts important reflections: How ready are our critical systems
+for the quantum computing era? And, what steps should industries take now to
+ensure future security? As quantum computing continues to advance, the urgency
+to transition to quantum-resistant cryptographic methods becomes more pressing,
+marking a crucial step in safeguarding our essential services against emerging
+cyber threats.
+
+<a href="https://arxiv.org/pdf/2401.03780.pdf">https://arxiv.org/pdf/2401.03780.pdf</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>          Securing Vehicular Networks with Advanced Cryptography          </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+This paper, titled "Enhancing Privacy in the Internet of Vehicles via
+Hyperelliptic Curve Cryptography," delves into safeguarding privacy in Vehicular
+Ad Hoc Networks (VANETs), crucial for the increasingly popular Internet of
+Vehicles (IoV). With the proliferation of IoV, privacy concerns are at an
+all-time high due to the risk of data interception in smart city environments.
+
+The research focuses on evaluating the effectiveness of Hyperelliptic Curve
+Cryptography (HECC) in IoV contexts. The study compares three cryptographic
+algorithms—Elliptic Curve Cryptography (ECC), HECC genus 2 (HECC-2), and HECC
+genus 3 (HECC-3)—to assess their suitability for ensuring secure communication
+in VANETs. The evaluation, conducted using the ns-3 simulator, examines the
+trade-offs between security, operational efficiency, and resource constraints in
+these environments.
+
+Results demonstrate that ECC offers significantly faster operation times
+compared to HECC variants, making it more suitable for environments where speed
+is essential. However, HECC, particularly genus 3, tends to provide stronger
+privacy protection, albeit at the cost of larger message sizes and higher energy
+consumption. This study raises critical considerations for the future of
+vehicular communication: finding the optimal balance between robust privacy
+protection and the practical limitations of vehicular networks.
+
+<a href="https://www.preprints.org/manuscript/202401.0618/v1">https://www.preprints.org/manuscript/202401.0618/v1</a>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>    SECTION 3: REGULATORY NEWS   </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>             FCC Chair Targets Carmakers Over Privacy Concerns            </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Federal Communications Commission Chair Jessica Rosenworcel is intensifying
+scrutiny on the privacy practices of car manufacturers. Concerns have been
+raised about the handling of location data by these companies, particularly in
+light of a New York Times report highlighting the misuse of such data in
+domestic violence cases. Rosenworcel's inquiry, directed at nine car companies
+and three mobile carriers, seeks clarity on how location data from connected
+apps and devices is managed, including its collection, sharing, and potential
+sale.
+
+The issue extends beyond individual privacy breaches to broader commercial data
+practices. California's privacy agency plans to review connected vehicles'
+practices, citing the automatic collection of sensitive personal data. Mozilla,
+a nonprofit organization, has labeled cars a "privacy nightmare," criticizing
+the excessive data collection and sale without consumer control. Senator Ed
+Markey also warned car companies against selling data that could be used by data
+brokers to create detailed consumer profiles. These developments underscore a
+growing concern about the evolving role of vehicles as data-centric devices,
+raising questions about consumer privacy and the need for regulatory oversight.
+
+<a href="https://www.mediapost.com/publications/article/392590/">https://www.mediapost.com/publications/article/392590/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>           Navigating the Maze of US State Privacy Laws in 2024           </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The landscape of state privacy laws in the United States has become increasingly
+complex by 2024. Currently, there are five state laws in effect, with four more
+set to be enacted this year and several others in 2025 and 2026. These laws,
+each with its unique set of rules and requirements, pose significant
+implications for companies dealing with consumer data. Particularly noteworthy
+is the fact that not all organizations will fall under these laws; applicability
+depends on factors such as the number of individuals and revenue thresholds.
+This creates a patchwork of compliance requirements for companies operating
+across multiple states.
+
+Importantly, these laws encompass various aspects like notice obligations,
+consumer rights, data management choices, record-keeping, and vendor contracts.
+States like California and Colorado are particularly stringent in their notice
+obligations. The laws also introduce new dimensions to consumer privacy, such as
+targeted advertising, information sale, sensitive information, and profiling.
+For businesses, especially those with loyalty programs or those selling data,
+this means an increased burden of compliance and the necessity of detailed
+record-keeping. As 2024 progresses, organizations must critically evaluate their
+activities to determine their scope under these laws and develop comprehensive
+privacy programs that address these multifaceted requirements. This evolving
+privacy landscape signifies a pivotal shift in how consumer data is handled and
+protected in the United States, affecting both domestic and international
+businesses.
+
+<a href="https://www.natlawreview.com/article/current-status-us-state-privacy-law-deluge-its-2024-do-you-know-where-your-privacy">https://www.natlawreview.com/article/current-status-us-state-privacy-law-deluge-
+its-2024-do-you-know-where-your-privacy</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                Understanding the Utah Consumer Privacy Act               </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Effective from December 31, 2023, the Utah Consumer Privacy Act (UCPA) presents
+a new set of data privacy regulations for businesses operating in Utah. The
+UCPA, considered more business-friendly compared to other state privacy laws
+like California's CCPA/CPRA, still mandates significant obligations for
+companies. It applies to businesses with annual revenues over $25 million, and
+either process the data of 100,000+ Utah consumers or derive over 50% of their
+revenue from selling personal data and process data of 25,000+ Utah residents.
+
+The UCPA offers consumers certain rights, like accessing and deleting their
+personal data (limited to data they provided) and opting out of data collection
+for certain purposes. However, it does not include rights like profiling opt-out
+or correcting inaccuracies, differentiating it from other state laws. It also
+defines 'sale' strictly as the exchange of personal data for monetary
+consideration, a narrower definition than seen in CCPA. Importantly, the act
+excludes employee data and certain types of data governed by other federal laws,
+and there is no private right of action for violations. Instead, the Utah
+Division of Consumer Protection and the Attorney General's office will handle
+enforcement, with potential fines for non-compliance.
+
+For businesses, the UCPA requires a privacy policy detailing data processing
+activities and sharing practices. They must also establish robust data security
+measures, fulfill consumer requests within 45 days, and ensure data processing
+contracts with processors. Non-discrimination and consent for processing
+children's data under 13 are also emphasized. As the privacy landscape continues
+to evolve, the UCPA signifies a tailored approach, balancing business interests
+with consumer privacy rights in the digital age.
+
+<a href="https://www.natlawreview.com/article/utah-consumer-privacy-act-effective-december-31-2023">https://www.natlawreview.com/article/utah-consumer-privacy-act-effective-
+december-31-2023</a>
+
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>            That's all for this edition, see you next time!             </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+</pre>
+</div>
+</body>
+</html>
