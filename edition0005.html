@@ -1,0 +1,618 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Tari Weekly Whisper - Edition 0005</title>
+<style type="text/css">
+ body { background-color: #000; }
+ a { color: #f5f }
+ a:link { text-decoration: none; }
+ a:visited { text-decoration: none; }
+ a:hover { text-decoration: none; }
+ a:active { text-decoration: none; }
+ .container { text-align: center; }
+ .container pre {
+       font-family:Courier New, Lucida, monospace;
+       font-size:16px;
+       color: #ccc;
+       display: inline-block;
+       text-align: left;
+     }
+ input {
+       font-family:Courier New, Lucida, monospace;
+       font-size:16px;
+       color: #ddd;
+       background-color: #111;
+       border: 1px solid #aaa;
+       border-radius: 3px;
+       margin-bottom: 0px;
+     }
+ .mt { margin-left: auto; margin-right: auto }
+ .f4 { color: #00a }
+ .f5 { color: #a0a }
+ .f7 { color: #aaa }
+ .f8 { color: #555 }
+ .fd { color: #f5f }
+ .b0 { background-color: #000 }
+ .b4 { background-color: #00a }
+ .b5 { background-color: #a0a }
+ .b7 { background-color: #aaa }
+ .b8 { background-color: #555 }
+</style>
+</head>
+<body>
+<div class="container">
+<pre><span class="fd b0"><span class=f0>
+                                   </span><span class=f8>· ──▄▄
+                                  ·-▄▄▀</span>▄▄<span class=f8>▀▄─·
+                           -─▄▄▄▀▀▄▀</span>▄ <span class=b4>█▐</span>▀▀<span class=f8>▐═-
+                         ─▄▀▀</span>▄▄▄▐█ █<span class=b4>▐</span><span class=f7> </span><span class=b4>█░█</span><span class=f8>▐▀
+          ·─▄▄▀▀▀▄▄▄▄     ▌</span><span class=b4>██░▐</span>▀▐██<span class=b4>░▐</span><span class=f7> </span>█<span class=b4>█</span>▄▄<span class=f8>▀▄
+      -──▄▄▀</span><span class=f5>▄▄</span><span class="f5 b4">▓▓▓</span><span class=f5>▄▄▄▄</span><span class=f8>▀▀▀▀▄█  </span><span class=b4>▓█</span><span class=f8> </span>██ ▀▀      <span class=f8>▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀▀▄
+      ▄▀▀</span><span class=f5>▄▄</span><span class="f5 b4">▓▓</span><span class=f5>▀▀  ▀▀▀▀</span><span class="f5 b4">▓▓▓▓</span><span class=f5>▄▄  </span>█<span class=b4>▄█▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀▀</span>█  █<span class=b4>▀▀▀▀▀▀▀▀</span>█<span class=f8>▐─·-
+    ▄▀</span><span class=f5>▄</span><span class="f5 b4">██</span><span class=f5>▀▀              </span><span class="f5 b4">▓▓</span>  ▐<span class=b4>▌ </span><span class="f4 b5">▓▓▒▓</span><span class=b4> ▐</span>▌ ▐█<span class="f4 b5">▒</span><span class=b4>▄▄▄▄▄</span><span class="f4 b5">▓▒</span>▌ █<span class="f4 b5">▓▒</span><span class=b4>▄▄▄▄▄</span><span class="f4 b5">▓</span><span class=b4>▐</span>▌ ▐<span class=b4>▄</span><span class="f4 b5">█▓▓▒▓█</span><span class=b4>▄</span>▌<span class=f8>█═─
+ -══█ </span><span class=f5>███████▄▄▄         </span><span class="f5 b4">▓▓</span>   ▀▀█<span class="f4 b5">▒░</span>█▀▀  █<span class="f4 b5">▒░</span>█ <span class=f8>░ </span>█<span class="f4 b5">▒░</span>█ █<span class="f4 b5">▒░</span>█ <span class=f8>░ </span>█<span class="f4 b5">▒</span><span class=b4>▐</span>▌<span class=f8>░ </span>▀▀█<span class="f4 b5">▒░</span>█▀▀<span class=f8>▄▀
+    █ </span><span class=b5>░░</span><span class=f8>░   </span><span class=f5>▀▀▀▀███▄▄▄▄  </span><span class=b5>  </span><span class=f7>     </span>█<span class="f4 b5">░ </span>█    █<span class="f4 b5">░ </span>█▄▄▄█<span class="f4 b5">░ </span>█ █<span class="f4 b5">░ </span>█▄▄▄<span class=b5>▌</span><span class="f4 b5">░</span>█ <span class=f8>░░  </span>█<span class="f4 b5">░ </span>█ <span class=f8>█══- -
+  ·─█ </span><span class=b5>▒▒</span><span class=f8>▒░░░░░░ </span><span class=b5> </span><span class=f5>█ ▀▀▀▀</span><span class=b5>░░░░</span><span class=f7>     </span>█<span class=b5> ░</span>█    █<span class=b5> ░▄▄▄▄▄ ░</span>█ █<span class=b5> ░▄▄▄▄▄▐</span>▄  <span class=f8>░░ </span>█<span class=b5> ░</span>█ <span class=f8>█
+    █ </span>▀<span class=b5>▓▓</span><span class=b8>▄</span><span class=f8>▒▒▒▒▒░</span><span class=b5>░ </span><span class=f8>░░░░ </span>▄<span class=b5>▒▒</span><span class=f5>▀     </span>█<span class=b5>░▒</span>█    █<span class=b5>░▒</span>█   █<span class=b5>░▒</span>█ █<span class=b5>░▒</span>█   █<span class=b5>░░</span>█ <span class=f8>░░ </span>█<span class=b5>░▒</span>█ <span class=f8>█─-─·
+     ▀▄ </span>▀█<span class=b5>▓</span>█<span class=b8>▄</span><span class=f8>▓▓▒</span><span class=b5>▒░</span><span class=f8>▒▓▒</span><span class=b8>▄</span><span class=b5>▓▓</span>▀ <span class=f8>░  ░  </span>█<span class=b5>▒▓</span>█  <span class=f8>░ </span>█<span class=b5>▒▓</span>█ <span class=f8>░ </span>█<span class=b5>▒▓</span>█ █<span class=b5>▒▓</span>█ <span class=f8>░ </span>█<span class=b5>▒▒</span>█ <span class=f8>░  </span>█<span class=b5>▒▓</span>█ <span class=f8>▀▄
+       ▀▄ </span>▀▀██<span class=b8>▄</span><span class=f8>▓</span><span class=b5>▓▒</span><span class=f8>▓</span><span class=b8>▄</span>█<span class=b5>▓</span>▀ <span class=f8>░▒▒░░▒░ </span>█<span class=b5>▓█</span>█ <span class=f8>░▒ </span>█<span class=b5>▓</span>██ <span class=f8>▒ </span>█<span class=b5>▓</span>██ █<span class=b5>▓</span>██ <span class=f8>▒ </span>█<span class=b5>▓▓</span>█  ▄█<span class=b5>█▓█</span>██▄ <span class=f8>▀▄
+  · - ───▀▀▄ </span>▀██<span class=b5>▓▓</span>██▀ <span class=f8>▒▒▒▓▓▒▒▓▒ </span>█<span class=b4>█</span>█▌<span class=f8>▒▒▓ </span>███▌<span class=f8>▓▓▌</span>▐███ ███▌<span class=f8>▒▓▒</span>▐███ ██████████ <span class=f8>█═─ ·
+            ▀▄ </span>▀█<span class=b5>▓</span>▀ <span class=f8>▓▓▓▓▓</span><span class="f8 b7">█</span><span class=f8>█▓▓█▓░▄▄▄▄▓▓█▓▄▄▄▄██▓▄▄▄▄▀▄▄▄▄▓█▓▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄█─ ·
+▄▀▀▄▀▀▄▀▀▀▀▀▄▀▀▀▄▄▀▀▀▓▀▀▓▀▀▀▓▀▀▀▀▀▀▓▀▀▀▓▀▀▒▀▀▓▀▀▒▀▀▀▀▀▓▓▀▀▀▒▓▀▀▀▀▀▓▀▀▀▀▀▓▀▀▀▀▀▄
+▌</span><span class=b7>▓</span>▌▄▐█ <span class=b7>▓</span>███<span class=b7>█</span><span class=f7> </span><span class=b7>▓</span>████ <span class=b5>▓</span>█ <span class=b7>▓█</span><span class=f7> </span><span class=b5>██</span> <span class=f8>▒ </span><span class=b7>▓</span>█<span class=f4>▄</span><span class=b7>▓</span>█  <span class=b7>▓</span>▌▄▐█ <span class=b7>▓█</span> <span class=b7>▓</span><span class=b5>▓</span><span class=f7> </span><span class=b7>▓</span>████ ▄<span class=b7>▓</span>█<span class=b5>▓</span>▄ <span class=b7>▓</span>████ <span class=b7>▓</span>████ <span class=b7>▓</span>████<span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b5>▓</span>▌<span class=b5>▓</span>▐<span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄</span>▄ <span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄</span>▄ <span class=f4>▓</span><span class=b5>▒▓</span><span class=b4>▄</span><span class=b5>▓</span>▀<span class=f4>░</span><span class=b5>▓▓</span><span class=f7> </span><span class=f8>░ </span><span class=b4>▐</span><span class=b5>▓</span><span class=b4>▄</span><span class=b5>▓</span>▌ <span class=f4>░</span><span class=b5>▓</span><span class=b4>▌</span><span class=b5>▓</span><span class=b4>▐</span><span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span>▄<span class=b5>▓▒</span><span class=f7> </span><span class=f4>▐</span><span class=b4>▐</span>█▌ <span class=f4>░</span>█<span class=b5>▓</span><span class=b4>▄▀</span>▀<span class=f4>░</span><span class=b5>█▓</span><span class=b4>▄</span>▄<span class=b5>▓</span><span class=f4>░</span><span class=b5>▓▓</span><span class=b4>▄▄</span><span class=f7> </span><span class=f4>░</span><span class=b5>█▓</span><span class=b4>▄</span>▄<span class=b5>▓</span><span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b5>▒▒▒▒▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=f4>▀  ░</span><span class=b5>▒▒</span><span class=f4>▀  ▒</span><span class=b5>░▒</span><span class=b4>▀</span>█<span class=b5>▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=f7>   </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>▒</span>▌  <span class=f4>▒</span><span class=b5>▒▒▒▒▒</span><span class=f4>▒</span><span class=b5>▒▒</span><span class=b4>▀</span><span class=b5>▒░</span><span class=f7> </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>▓</span>▌  <span class=f4>▒</span><span class=b4>▀</span><span class=b5>▒░</span>▄<span class=f4>▒</span><span class=b5>▓▒</span><span class=b4>▀</span>▀ <span class=f4>▒</span><span class=b5>▒▒</span><span class=f4>▀  ▒</span><span class=b5>▓▒</span><span class=b4>▀</span><span class=b5>▒</span>▄<span class=f8>▐ </span>
+<span class="f8 b4">▌</span><span class=b4>▀</span><span class=b5>░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>░░░░ </span><span class=f4>░</span><span class=b5>░░░░ </span><span class=f4>█</span><span class=b5> ░</span><span class=f7> </span><span class=b4>▐</span><span class=b5>░</span><span class=f4>▓</span><span class=b5>░░░  </span><span class=f4>▐</span><span class=b4>▐</span><span class=b5>░</span>▌ <span class=f8>▄</span><span class="f8 b4">▌</span><span class=b4>▀</span><span class=b5>░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>░░</span><span class=f4>▓</span><span class=b5>░ </span><span class=f4>▓</span>█<span class=b5>▓▒░ </span><span class=f4>▓</span><span class=b5>░▒</span><span class=f5>▄</span><span class=b5> </span><span class=f5>▀</span><span class=f4>▓</span><span class=b5>▒░</span>   <span class=f4>▓</span><span class=b5>░░░░ </span><span class=f4>▓</span><span class=b5>▒░</span><span class=f4>▓</span><span class=b5>░▒</span><span class=f8>▐
+▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀ ▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀▀</span><span class="f8 b4">▄</span><span class=f8>▄▀▀▀▀</span><span class="f8 b4">▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄</span><span class=f8>▀</span><span class="f8 b4">▄▄</span><span class=f8>▀ </span></span>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                               EDITION 0005                               </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Welcome to Edition 0005 of the Tari Weekly Whisper, where we cover developments
+and news coming out over the last week that privacy lovers will actually care
+about! Let's dig in...
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>            SUBSCRIBE            </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>                                                                        </span><span class=f8>▓</span>
+<div id="mc_embed_shell"><div id="mc_embed_signup"><form action="https://tari.us21.list-manage.com/subscribe/post?u=4f96c06b5fbb802894cb40fe9&amp;id=f4ba4af258&amp;f_id=00a7e7e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate=""><div id="mc_embed_signup_scroll"><div class="mc-field-group"><span class=f8>  █       </span><span class=fd><label for="mce-EMAIL">Email Address (required, obviously)  </label></span><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span><span class=f8>        ▓</span>
+<span class=f8> █                                                                          </span><span class=f8>▓</span></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display: none;"></div><div class="response" id="mce-success-response" style="display: none;"></div></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f96c06b5fbb802894cb40fe9_f4ba4af258" tabindex="-1" value=""></div><div class="clear"><span class=f8>  █                              </span><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="    Subscribe    "><span class=f8>                         ▓</span></div></div></form></div></div><span class=f8> █                                                                          </span><span class=f8>▓</span>
+<span class=f8>  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>     SECTION 1: PRIVACY NEWS     </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+                                                                                
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>      Revolutionizing Blockchain Education: Tari Labs University 2.0      </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+Tari Labs University (TLU), initially launched in 2019, has undergone a
+significant transformation with the introduction of TLU 2.0. The original
+platform, designed to educate developers about blockchain technology through
+seminars and published reports, has now expanded its scope and content. The new
+version retains its foundational material but adds a wealth of curated content
+aimed at bridging the gap between a curious developer and a proficient
+blockchain engineer. What makes TLU 2.0 stand out is its comprehensive approach
+to learning. It features a range of courses, such as the "Introduction to
+Blockchain," which starts from the basics and progresses to advanced topics,
+including an in-depth analysis of the Bitcoin white paper. The platform also
+introduces interactive tutorials using the latest Tari cryptography libraries,
+allowing users to engage with the material in a hands-on manner.
+
+The update is not just about content; it's also about accessibility and
+community involvement. TLU 2.0 has implemented category tags for easy navigation
+and a local search index, enhanced by TariBot, to assist users in finding
+relevant information quickly. The platform encourages community contributions,
+inviting users to submit new content, improve existing materials, or even
+suggest self-assessment questions. Looking ahead, TLU plans to expand its
+offerings to include topics like zero-knowledge proving systems and smart
+contracts, in anticipation of Tari's mainnet launch. This evolution of TLU
+signifies a commitment to not just educating but also building a community of
+knowledgeable developers in the blockchain space.
+
+<a href="https://www.tari.com/updates/2024-01-17-update-126">https://www.tari.com/updates/2024-01-17-update-126</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>            Shattering Bitcoin's Illusion of Anonymity in 2013            </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The article "How a 27-year-old busted the myth of Bitcoin’s anonymity" delves
+into the groundbreaking work of Sarah Meiklejohn, a young mathematician who
+challenged the widely held belief that Bitcoin transactions are untraceable.
+Initially perceived as a digital haven for privacy, Bitcoin's supposed anonymity
+was a major draw for users ranging from crypto-anarchists to individuals engaged
+in illicit activities. This belief was bolstered by the cryptocurrency's use on
+platforms like the Silk Road, a dark-web market for illegal drugs and other
+contraband. However, Meiklejohn's research in 2013 revealed a starkly different
+reality. Through her extensive and varied use of Bitcoin - involving hundreds of
+transactions, including purchases, bets, and transfers - she meticulously
+documented and analyzed the blockchain's data. Her goal was to test Bitcoin's
+privacy features in a way never done before.
+
+Meiklejohn's experiments were not just academic exercises but a deep dive into
+the Bitcoin ecosystem, exploring how people used the cryptocurrency and whether
+they were spending or saving it. Her findings were revolutionary, demonstrating
+that Bitcoin transactions could often be traced, contrary to the popular belief
+of anonymity. This revelation had profound implications, leading to significant
+advancements in crypto criminal justice. It enabled the solving of major
+cybercrimes, including the bust of the largest child sexual abuse video site on
+the dark web and the seizure of stolen bitcoins worth hundreds of millions of
+dollars. Meiklejohn's work marked a turning point in understanding
+cryptocurrency's privacy properties and sparked a new era in the fight against
+cybercrime, challenging the notion of Bitcoin as the ultimate privacy-preserving
+currency.
+
+<a href="https://arstechnica.com/features/2024/01/how-a-27-year-old-busted-the-myth-of-bitcoins-anonymity/">https://arstechnica.com/features/2024/01/how-a-27-year-old-busted-the-myth-of-
+bitcoins-anonymity/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>           Google Street View's German Gap: Privacy Over Pixels           </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The article "Why Germany is a blank spot on Google’s Street View" explores the
+intriguing absence of Germany and Austria from Google Street View's extensive
+global coverage. This gap is not due to technological limitations but stems from
+a deep-rooted cultural emphasis on privacy in these countries. The article
+highlights that while Germans may be open about physical nudity, as seen in
+their Freikörperkultur (FKK) or "free body culture," they are fiercely
+protective of their personal data. This protective stance is rooted in the
+historical traumas of living under the surveillance states of the Nazi regime
+and East Germany's Stasi. These experiences have ingrained a strong sense of
+privacy in the German psyche, leading to stringent data protection laws and a
+general wariness towards data collection and surveillance.
+
+The article details how Germany's approach to privacy has led to unique
+challenges for companies like Google. When Google announced plans to map
+Germany's streets in 2010, there was significant public backlash, including
+vandalism of Google's camera cars and legal challenges. This resistance led to a
+high percentage of households requesting their homes be blurred on Street View,
+prompting Google to limit its Street View operations in Germany. The article
+also touches on the broader implications of Germany's privacy stance in a world
+increasingly reliant on data monetization and digital technologies. It raises
+questions about the balance between privacy and the benefits of digitization, as
+well as the potential shift in attitudes towards data privacy among younger
+generations.
+
+<a href="https://www.freethink.com/society/germany-street-view">https://www.freethink.com/society/germany-street-view</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                 Navigating the Privacy Risks of Chatbots                 </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The Wall Street Journal's article "Is It Safe to Share Personal Information With
+a Chatbot?" delves into the privacy risks associated with using AI chatbots. It
+acknowledges the inherent risk in sharing personal information, given that
+chatbots are trained on vast datasets that may include sensitive data. This
+training process could potentially lead to the unintentional exposure of private
+information in other users' interactions or through security breaches. Experts
+like Ramayya Krishnan from Carnegie Mellon University emphasize the lack of
+independent audits on chatbot training data, raising concerns about the presence
+of private data in these models.
+
+The article advises users to exercise caution, highlighting instances where
+chatbots have inadvertently released confidential information. While steps have
+been taken by companies to protect user data, such as enabling the deletion of
+chat histories, these measures are not completely secure against hacking. Users
+are advised to be wary of chatbots that lack a privacy notice or ask for
+excessive personal information. The key takeaway is to carefully consider the
+risks before sharing sensitive information with AI chatbots and to thoroughly
+review their terms of service and privacy policies.
+
+This piece underscores the tension between the utility of AI chatbots and the
+imperative to safeguard personal privacy in the digital realm.
+
+<a href="https://www.wsj.com/tech/ai/ai-chatbot-sharing-personal-information-229d41a0">https://www.wsj.com/tech/ai/ai-chatbot-sharing-personal-information-229d41a0</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>         Google Chrome's Incognito Mode: Not So Private After All         </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The article from BGR discusses a significant privacy concern with Google
+Chrome's Incognito mode. Despite popular belief, Incognito mode doesn't offer
+complete privacy. Google has recently updated its disclaimer for Incognito mode
+users, explicitly stating that Google will continue tracking user activity even
+in this mode. This revelation comes amidst a $5 billion lawsuit settlement
+regarding Google's tracking practices in Incognito mode. The updated disclaimer
+clarifies that Incognito mode only prevents others using the same device from
+viewing one's browsing history, but does not stop data collection by websites,
+including Google.
+
+The author, a long-time Mac user and Microsoft Edge enthusiast, expresses
+disappointment with Google Chrome, especially in light of this development. They
+highlight that while private browsing is generally not completely private due to
+tracking by advertising companies, Google could improve Chrome by ensuring that
+data from Incognito mode is not linked to a user's broader online profile. The
+article also references Google Maps' Incognito mode, which promises not to use
+activity for personalizing the Maps experience, yet acknowledges that tracking
+might still occur. The piece concludes with anticipation for the terms of the
+recent lawsuit settlement and the hope for more meaningful changes to Chrome's
+privacy features in the future.
+
+<a href="https://bgr.com/tech/chrome-incognito-still-tracks-you-which-is-a-big-reason-i-wont-use-googles-browser/">https://bgr.com/tech/chrome-incognito-still-tracks-you-which-is-a-big-reason-i-
+wont-use-googles-browser/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>           Google's New Move: Removing Personal Data from Search          </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The article from Upworthy discusses a significant update from Google, allowing
+individuals to request the removal of their personal information from Google
+Search results. This change, announced on April 27, is a response to the growing
+concerns about privacy and the ease with which personal details like home
+addresses and phone numbers can be found online. Google's Global Policy Lead for
+Search, Michelle Chang, emphasizes the company's commitment to balancing open
+access to information with tools for personal privacy protection.
+
+Users can now initiate a removal request through Google's support page,
+specifying the personal information appearing in Search and providing relevant
+search terms. While Google's new policy is a step towards greater control over
+personal data, it's important to note that removing content from Google Search
+doesn't erase it from the internet. The article also highlights the broader
+context of increasing online fraud, with consumers losing $5.8 billion to
+scammers in 2021. This update from Google is part of a larger effort to combat
+online fraud and protect personal information in the digital age.
+
+<a href="https://www.upworthy.com/how-to-remove-personal-information-from-internet-rp5">https://www.upworthy.com/how-to-remove-personal-information-from-internet-rp5</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>           Apple Vision Pro: A New Standard in Privacy for AR/VR          </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The iMore article discusses the privacy features of the upcoming Apple Vision
+Pro, Apple's first augmented and virtual reality headset. Priced at $3,499, the
+headset boasts two 4K displays and immersive environments. Apple has extended
+its commitment to privacy, a hallmark of its product lineup, to the Vision Pro.
+The device will feature its own App Store, requiring an Apple ID for use, which
+helps protect personal data. Existing Apple apps like Safari and Photos will
+come with built-in privacy protections, and communications through iMessage and
+FaceTime will be end-to-end encrypted.
+
+Unique to Vision Pro are several privacy-focused features. Optic ID, similar to
+Face ID, uses iris scanning for authorization and keeps data encrypted on the
+device without storing it on Apple's servers. The headset's multiple cameras,
+sensors, and microphones process data at the system level, preventing individual
+apps from accessing users' surroundings. Eye input for UI control is kept
+private, with only final selections being transmitted. Additionally, a visual
+indicator on the device informs others when spatial photos or videos are being
+captured. While no device can guarantee complete privacy, Apple Vision Pro aims
+to set a new standard in privacy for AR/VR devices.
+
+<a href="https://www.imore.com/vision-pro/apple-vision-pro-privacy">https://www.imore.com/vision-pro/apple-vision-pro-privacy</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                The Complex Landscape of Online Anonymity                 </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The Daily Dot's article "Online Anonymity Is a Thing of the Past" explores the
+intricate nature of online anonymity and its varying implications across
+different platforms. Anonymity on the internet can be empowering, allowing
+individuals to express themselves freely without fear of repercussions. It's
+particularly beneficial for vulnerable groups who need to access information and
+communicate safely. However, this anonymity can also lead to negative behaviors
+like trolling, cyberbullying, and harassment, as people may misuse their hidden
+identities.
+
+The article highlights the contrasting approaches of platforms like TikTok and
+Twitter towards anonymity. TikTok's visual-centric format discourages anonymity,
+pushing users to reveal their identities, talents, and creativity. This approach
+fosters self-expression and authenticity but can also expose users to
+appearance-related criticism and cyberbullying. On the other hand, Twitter, with
+its text-centric nature, allows and sometimes encourages users to engage
+anonymously, offering a space for private individuals to participate in broader
+conversations without revealing their identities.
+
+The debate over online anonymity raises critical questions about privacy,
+freedom of expression, and the responsibilities of digital platforms. The
+article includes perspectives from journalism major Palmer Boothe and sociology
+graduate Rachel Maxwell, discussing the challenges and dynamics of maintaining
+anonymity on these platforms. The piece concludes by reflecting on the evolving
+digital world and the ongoing debate surrounding online anonymity, symbolized by
+the iconic New Yorker cartoon: "On the Internet, no one knows you are a dog."
+
+<a href="https://www.dailydot.com/irl/age-surveillance-anonymous-posting/">https://www.dailydot.com/irl/age-surveillance-anonymous-posting/</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                Understanding Alexa's Privacy Implications                </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The article from MakeUseOf, titled "Is Amazon's Alexa Spying on You?", addresses
+the privacy concerns surrounding Amazon's Alexa-enabled devices. It explains
+that while Alexa continuously listens for a wake-up word to activate, it doesn't
+necessarily mean it's recording all conversations. However, the device can be
+accidentally activated up to 19 times a day, potentially capturing snippets of
+private conversations. This raises concerns about the extent of data being
+recorded and processed by Amazon.
+
+Amazon claims that Alexa only begins listening after detecting the wake word and
+does not record personal conversations by default. Yet, incidents have been
+reported where Alexa devices recorded and shared private conversations,
+highlighting potential privacy risks. The article also discusses Amazon's use of
+voice recordings to improve Alexa's understanding of human speech, with
+thousands of Amazon staff reportedly listening to users' voice clips.
+
+To protect privacy, the article suggests several measures: stopping Alexa from
+listening completely, deleting voice recordings, choosing how long recordings
+are saved, and revoking permissions from Alexa Skills. These steps can help
+users manage their data and mitigate privacy risks associated with Alexa-enabled
+devices.
+
+<a href="https://www.makeuseof.com/is-amazon-alexa-spying-on-you/">https://www.makeuseof.com/is-amazon-alexa-spying-on-you/</a>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>    SECTION 2: RESEARCH PAPERS   </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd> Revolutionizing Decentralized Communication: The SendingNetwork Approach </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In the rapidly evolving world of Internet technologies, the SendingNetwork
+emerges as a groundbreaking solution to the challenges of decentralized
+messaging. Developed by Mason Yeung and his team at Sending Labs, this research
+paper delves into the creation of a decentralized communication network that
+addresses key issues such as privacy protection, scalability, efficiency, and
+composability. The core of SendingNetwork's approach is the integration of edge
+computing and the modular libp2p library, aiming to establish a reliable and
+secure communication network.
+
+The methodology of SendingNetwork is multifaceted. It employs a dynamic group
+chat encryption mechanism based on the Double Ratchet algorithm, ensuring secure
+communication. Additionally, the network introduces a Delegation scheme for
+efficient message processing in large group chats, enhancing both resilience and
+scalability. The paper also discusses the integration of two innovative
+consensus mechanisms: "Proof of Relay" for validating message relay workload and
+"Proof of Availability" for ensuring network consistency and managing
+incentives.
+
+The implications of SendingNetwork are significant for the future of
+decentralized communication. By addressing the limitations of current
+decentralized solutions, it paves the way for more secure, scalable, and
+efficient messaging systems. This could revolutionize how we think about privacy
+and data ownership in digital communication, potentially influencing the broader
+adoption and maturation of blockchain technologies. However, one might wonder
+how this system will fare against the ever-evolving cybersecurity threats and
+whether it can maintain its robustness in the face of real-world challenges.
+
+<a href="https://arxiv.org/pdf/2401.09102.pdf">https://arxiv.org/pdf/2401.09102.pdf</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                The Privacy Risks of Ambient Light Sensors                </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+This research paper delves into the privacy implications of using ambient light
+sensors in smart devices. The study focuses on how these sensors, commonly
+considered low-risk, can be exploited to capture images of touch interaction on
+a device's screen, a feat traditionally achieved only with cameras. This is done
+by combining the ambient light sensor with the device's display, creating an
+inverse imaging problem. The researchers developed an innovative algorithm
+involving an ℓp-norm dequantizer and a deep denoiser to reconstruct images from
+the screen's perspective. The results were eye-opening, demonstrating that
+simple touch interactions and even hand gestures could be eavesdropped on using
+an ordinary Android tablet. This discovery brings to light a significant privacy
+risk, prompting the need for reconsideration of sensor permissions and
+mitigation strategies in smart devices.
+
+The implications of this study are profound for privacy in the digital age. It
+raises critical questions: Should we reevaluate the security of 'low-risk'
+sensors in our devices? How can we protect against such subtle yet significant
+privacy intrusions? The research highlights the urgency of developing more
+secure technologies that guard against unexpected privacy breaches.
+
+<a href="https://www.science.org/doi/10.1126/sciadv.adj3608">https://www.science.org/doi/10.1126/sciadv.adj3608</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>                Enhancing Privacy in Real-Time Navigation                 </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The research paper titled "A Novel Privacy Preserving Real-Time Navigation
+Scheme" addresses the critical issue of privacy in the context of real-time
+navigation services within the Internet of Vehicles (IoV). Authored by Yukang
+Deng, Lei Zhang, Jing Li, and Bin Wang, the study proposes a new scheme to
+protect driver privacy without compromising the efficiency of navigation
+services. This research is particularly relevant in an era where the
+proliferation of private and connected cars necessitates intelligent driving
+environments to manage complex traffic scenarios.
+
+The methodology involves using a fuzzy query range to replace the exact start
+and endpoint in navigation queries, thereby enhancing privacy protection. The
+authors also introduce a road condition update method for navigation service
+providers, designed to resist collusion attacks. The effectiveness of the
+proposed scheme is validated through experiments, which demonstrate its
+feasibility compared to existing research.
+
+The implications of this study are significant for the future of navigation
+systems in the IoV. By providing a method to protect location privacy, the
+research addresses a major concern for drivers using real-time navigation
+services. However, it raises questions about the balance between privacy and
+service quality, and how these new methods will integrate into existing
+navigation systems. Will this approach be widely adopted, and how will it change
+the landscape of real-time navigation services in terms of user trust and
+service reliability?
+
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4696986">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4696986</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>    Enhancing OpenSSL with Quantum Randomness for Robust TLS Security     </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The paper "Securing OpenSSL with Quantum Random Number Generators for TLS" by
+Javier Blanco-Romero, Vicente Lorenzo, Florina Almenares, Daniel Díaz-Sánchez,
+Carlos García Rubio, Celeste Campo, and Andrés Marín, delves into the critical
+integration of Quantum Random Number Generators (QRNGs) into the Transport Layer
+Security (TLS) protocol. Given TLS's status as the most widely used
+cryptographic protocol on the Internet, the incorporation of QRNGs is a
+significant advancement. QRNGs provide true randomness, ensuring that encryption
+keys are neither predictable nor guessable, thus enhancing the security of
+cryptographic systems, particularly in the realm of post-quantum cryptography.
+
+The paper explores two approaches to integrate the Quantis QRNG PCIe-240M into
+OpenSSL 3.0 on a Linux system. These integrations are evaluated and compared
+using an Nginx server that employs OpenSSL's implementation of TLS 1.3 for
+secure communication. The integration of QRNGs into TLS protocols is not only a
+step towards complying with certain standards but also prepares systems for the
+advent of quantum computing through the use of hybrid systems.
+
+The implications of this research are profound for the future of Internet
+security. By enhancing OpenSSL with QRNGs, the paper suggests a pathway to
+significantly bolster the security of online communications against emerging
+quantum computing threats. However, it raises questions about the practicality
+of widespread implementation and the readiness of current infrastructures to
+adapt to such advanced cryptographic measures. How will this integration impact
+the overall performance of TLS protocols, and what are the potential challenges
+in its widespread adoption?
+
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4696983">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4696983</a>
+
+
+                      <span class="f7 b0"><span class=f8>▄▄▀▀▀▀▄▄▀▀▀▀▀▄▀▀▀▀▀▄▀▀▀▀▀▄▄▄▀▀▀▄▄▀▀▄▀▀▄▌▀ ▄ ■
+                    ░▒▓▌</span><span class="fd b5">▓</span><span class=fd>█ </span><span class="fd b7">▓█</span> <span class="fd b7">▓</span><span class=fd>████ ██ ██ </span><span class="fd b7">▓</span><span class=fd>████  █▌ ▐█ ▄███▄ </span><span class=f8>████▓▒░
+                   ░▒▓▌</span><span class=f4>░</span><span class="fd b5">▒▓</span><span class="fd b4">▄</span><span class="fd b5">▓</span><span class=fd>█</span><span class=f4>░</span><span class="fd b5">▓▓</span><span class="fd b4">▄</span><span class=fd>▄  </span><span class=f4>░</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class=fd>█▌  </span><span class=f4>▒</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=f4>░</span><span class="fd b5">▓</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class=fd>█ </span><span class=f8>█▓▀ ■
+                    ░▒▓ </span><span class="fd b5">░▒</span><span class="fd b4">▀</span><span class=fd>█</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒▒</span><span class=f4>▀   ▒</span><span class=fd>██▌  </span><span class=f4>▐</span><span class="fd b4">▐</span><span class="fd b5">▓</span><span class=fd>▌  </span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▌ </span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=f4>▒</span><span class="fd b5">▒</span><span class=fd>▓██▀ </span><span class=f8>█■▀
+                   ░▒▓▌</span><span class=f4>▓</span><span class="fd b5"> ░</span> <span class="fd b4">▐</span><span class="fd b5">░</span><span class=f4>▓</span><span class="fd b5">░░░░ </span><span class=f4>▓</span><span class=fd>██ ██ </span><span class=f4>▒</span><span class="fd b4">▐</span><span class="fd b5">▒</span><span class=fd>▌  </span><span class=f4>▓</span><span class="fd b4">▀</span><span class="fd b5">░░ </span><span class=f5>▀</span><span class=f4>▓</span><span class="fd b5">░ </span>  <span class=f8>░▒█▄▀
+                   ░▒█▀ </span><span class="f8 b4">▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄▄▄</span><span class=f8>▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀</span><span class="f8 b4">▄▄▄</span><span class=f8>▄▄▀▀▀</span><span class="f8 b4">▄▄</span><span class=f8>▄▀▀▄▄▀▀▓▀▄■
+                    ▀█▒█▀                                ██▀▓▒▀■
+                   ░▒▀█</span><span class=fd>    SECTION 3: REGULATORY NEWS   </span><span class=f8>▄▀█▓■▄
+                    ░▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄■▄▄▀▀</span></span>
+                    
+                    
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd> FTC's Stern Warning to AI Companies: Uphold Privacy or Face Consequences </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In a significant move, the Federal Trade Commission (FTC) has issued a stern
+warning to AI companies, particularly those offering model-as-a-service, to
+honor their privacy and confidentiality commitments. Model-as-a-service
+companies provide AI models for personal or professional use, a service that has
+become increasingly vital due to the high costs and complexities involved in AI
+model development. However, the FTC is concerned about the privacy implications
+of these services. The training of these AI models requires vast amounts of
+data, which can lead to excessive data collection, potentially conflicting with
+the companies' obligations to protect user data. This tension raises questions
+about the adherence to data minimization principles, a key aspect of privacy
+laws in various jurisdictions.
+
+The FTC's warning is not just a cautionary note but comes with the threat of
+legal action. Under Section 5 of the FTC Act, the Commission can bring
+enforcement actions against companies that fail to keep their privacy promises.
+This includes a novel remedy known as "algorithmic disgorgement," where
+companies may be forced to delete algorithms developed with improperly collected
+data. The implications of this enforcement extend beyond the United States.
+European and African businesses and consumers engaging with these AI services
+must be aware of these developments, as the misuse of data by model-as-a-service
+companies can have global repercussions, including potential antitrust
+violations. The FTC's stance is clear: there is no exemption for AI companies
+from existing laws, and they must align their practices with their privacy
+commitments and public statements.
+
+<a href="https://www.natlawreview.com/article/ftc-warns-ai-companies-honor-privacy-and-confidentiality-commitments-ai-washington">https://www.natlawreview.com/article/ftc-warns-ai-companies-honor-privacy-and-
+confidentiality-commitments-ai-washington</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>   The Patchwork of State Data Privacy Laws: A Call for Federal Action    </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+In the United States, the absence of a federal data privacy law has led to a
+patchwork of state-level legislation, with 13 states having enacted their own
+laws. California pioneered this movement with a comprehensive law that allows
+consumers to sue companies over data breaches. This approach contrasts with the
+12 other states, including Colorado, Connecticut, and Virginia, which have
+modeled their laws on a 2019 proposal from Washington state. These laws do not
+permit individual lawsuits against tech companies for data breaches but offer a
+mix of basic and substantive protections. Both California's model and the other
+states' approaches allow their attorney generals to sue companies for
+violations.
+
+The diversity in state laws highlights the complexity and urgency of
+establishing a federal data privacy law. Privacy advocates are pushing for a
+federal approach that emphasizes data minimization, limiting the collection of
+data to what is necessary for providing a service or selling a product. However,
+Congress has struggled to reach a consensus on this issue. The rapid advancement
+of AI systems, which rely on large volumes of data, adds pressure for federal
+action. The lack of a unified federal law not only creates a fragmented legal
+landscape in the U.S. but also poses challenges for international companies,
+including those in Europe and Africa, who must navigate these varying state
+laws. The situation underscores the need for a comprehensive federal data
+privacy law that aligns with global privacy standards and addresses the
+complexities of modern data usage.
+
+<a href="https://www.govtech.com/policy/many-states-have-data-privacy-laws-where-is-the-federal-law">https://www.govtech.com/policy/many-states-have-data-privacy-laws-where-is-the-
+federal-law</a>
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █</span><span class=fd>  FTC's 'Historic' Privacy Win: A Deeper Look at the Outlogic Settlement  </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+The Federal Trade Commission's (FTC) recent settlement with Outlogic (formerly
+X-Mode) over the sale of sensitive location data has been labeled historic, but
+the reality paints a different picture. The settlement mandates Outlogic to stop
+selling sensitive location data and delete the data it has illicitly gathered.
+However, Outlogic's response, asserting that the FTC order would not
+significantly impact its operations, highlights a crucial issue in the current
+privacy regulation landscape. The FTC's action, while significant, primarily
+targets deceptive practices rather than the broader issue of pervasive
+surveillance. This approach is based on the principle of "notice and choice,"
+which is often ineffective as most users do not fully read or understand privacy
+policies.
+
+The case also reveals a disparity in privacy protections. While Congress members
+seek to protect themselves from surveillance, the general public remains
+exposed. The FTC's limited enforcement capabilities and the challenges in
+proving "concrete harm" in court leave consumers with little defense against
+privacy violations. The situation is further complicated by legislative efforts
+like the American Data Privacy and Protection Act of 2022, which ironically
+would have exempted activities similar to Outlogic's. In contrast, the Fourth
+Amendment Is Not For Sale Act, currently under consideration, aims to end the
+government's practice of buying location data from companies, potentially
+offering a more robust approach to privacy protection.
+
+This scenario has broader implications, especially for regions with stringent
+privacy laws like Europe and Africa. The U.S.'s struggle to enforce effective
+privacy regulations underscores the global challenge of balancing technological
+advancements with individual privacy rights. The Outlogic case serves as a stark
+reminder of the need for more comprehensive privacy safeguards in the digital
+age.
+
+<a href="https://www.wired.com/story/ftc-xmode-outlogic-location-data-settlement/">https://www.wired.com/story/ftc-xmode-outlogic-location-data-settlement/</a>
+
+
+<span class=f8> ░▒▀▀▀▀▀▀▄▓▀▀■▀▀▀▀▀░▓▀▀▀▀▄▓▓▀▓▓▀▀▄▀▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▀▀▀▀▀░▀▀░▀▀▀▀▄▓▓▀▓▓▀▀▄▀░▓▀▄
+ █  </span><span class=fd>            That's all for this edition, see you next time!             </span><span class=f8>▓
+  ▀▓▀░▒▀■█▀█▒▀▄▀▓■▓▒ ░▒▀■█▀█▒▀▄▀▓■▓░▒▀■█▀█▒▀▄▀▓■▓▒░▒▀■▓▒░▓▒░▒▀■█▀█▒▀▄▀▓■▓▒▀█</span>
+
+</pre>
+</div>
+</body>
+</html>
